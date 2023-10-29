@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha o Seu Plano</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano Básico</h5>
+                        <p class="card-text">Plano de acesso básico à academia.</p>
+                        <p class="card-text">$50/mês</p>
+                        <button class="btn btn-primary" onclick="addToCart('Plano Básico', 50)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano Premium</h5>
+                        <p class="card-text">Plano de acesso premium com treinamento personalizado.</p>
+                        <p class="card-text">$80/mês</p>
+                        <button class="btn btn-primary" onclick="addToCart('Plano Premium', 80)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano VIP</h5>
+                        <p class="card-text">Plano VIP com acesso ilimitado a todas as instalações.</p>
+                        <p class="card-text">$100/mês</p>
+                        <button class="btn btn-primary" onclick="addToCart('Plano VIP', 100)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Carrinho de Compras</h2>
+                <ul id="cart" class="list-group"></ul>
+                <p>Total: <span id="total">$0</span></p>
+                <button class="btn btn-success" id="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
