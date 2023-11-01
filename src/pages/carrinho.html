@@ -1,109 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
     <header>
-        <a href="../../index.html"><img src="" alt="logo tipo da empresa"></a>                    
-        <nav>
-            <ul>                                 
-               <li><a href="./src/pages/horario.html">Horário de Aulas</a></li>
-               <li><a href="./src/pages/galeria.html">Galeria de Fotos</a></li>                
-               <li><a href="./src/pages/membros.html">Área de Membros</a></li>               
-           </ul>
-        </nav>
+      <a href="../../index.html"><img src="" alt="logo tipo da empresa" /></a>
+      <nav>
+        <ul>
+          <li><a href="./src/pages/horario.html">Horário de Aulas</a></li>
+          <li><a href="./src/pages/galeria.html">Galeria de Fotos</a></li>
+          <li><a href="./src/pages/membros.html">Área de Membros</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="container">
-        <h1>Escolha o Seu Plano</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Plano Básico</h5>
-                        <p class="card-text">Plano de acesso básico à academia.</p>
-                        <p class="card-text">$50/mês</p>
-                        <button class="btn btn-primary" onclick="addToCart('Plano Básico', 50)">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
+      <h1>Escolha o Seu Plano</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano Básico</h5>
+              <p class="card-text">Plano de acesso básico à academia.</p>
+              <p class="card-text">$50/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano Básico', 50)"
+              >
+                Adicionar ao Carrinho
+              </button>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Plano Premium</h5>
-                        <p class="card-text">Plano de acesso premium com treinamento personalizado.</p>
-                        <p class="card-text">$80/mês</p>
-                        <button class="btn btn-primary" onclick="addToCart('Plano Premium', 80)">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Plano VIP</h5>
-                        <p class="card-text">Plano VIP com acesso ilimitado a todas as instalações.</p>
-                        <p class="card-text">$100/mês</p>
-                        <button class="btn btn-primary" onclick="addToCart('Plano VIP', 100)">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2>Carrinho de Compras</h2>
-                <ul id="cart" class="list-group"></ul>
-                <p>Total: <span id="total">$0</span></p>
-                <button class="btn btn-success" id="checkout">Finalizar Compra</button>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano Premium</h5>
+              <p class="card-text">
+                Plano de acesso premium com treinamento personalizado.
+              </p>
+              <p class="card-text">$80/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano Premium', 80)"
+              >
+                Adicionar ao Carrinho
+              </button>
             </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano VIP</h5>
+              <p class="card-text">
+                Plano VIP com acesso ilimitado a todas as instalações.
+              </p>
+              <p class="card-text">$100/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano VIP', 100)"
+              >
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2>Carrinho de Compras</h2>
+          <ul id="cart" class="list-group"></ul>
+          <p>Total: <span id="total">$0</span></p>
+          <button class="btn btn-success" id="checkout">
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
     </div>
     <footer>
-        <section>
-            <img src="" alt="logotipo da academia">
-        </section>
-        <section>
-            <h2>Siga a Orange Fitness</h2>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/orangefitness" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li> <a href="https://www.instagram.comorangefitness" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.twitter.com/orangefitness" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li> <a href="https://www.linkedin.com/company/orangefitness" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-        </section>
-        <section>
-            <div>
-                <h2>Institucional</h2>
-                <ul>
-                    <li><a href="./src/pages/sobre.html">Sobre a Academia</a></li>
-                    <li><a href="./src/pages/termos.html">Termos de Uso</a></li>
-                    <li><a href="./src/pages/politicas.html">Política de Privacidade</a></li>
-                    <li><a href="./src/pages/faleConosco.html"></a></li>
-                    <li><a href="./src/pages/faq.html">Perguntas Frequentes</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Planos</h2>
-                <ul>
-                    <li><a href="./src/pages/programas.html">Programas e Serviços</a></li>
-                    <li><a href="./src/pages/inscricao.html">Matrícula</a></li>
-                    <li><a href="./src/pages/contato.html">Contatos</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Corporativo</h2>
-                <ul>
-                    <li><a href="./src/pages/blog.html">Blog e Notícias</a></li>
-                    <li><a href="./src/pages/depoimentos.html">Depoimentos</a></li>
-                </ul>
-            </div>
-        </section>
-        <p>&copy; 2023 Orange Fitness</p>
-       
+      <section>
+        <img src="" alt="logotipo da academia" />
+      </section>
+      <section>
+        <h2>Siga a Orange Fitness</h2>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.facebook.com/orangefitness"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.comorangefitness"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com/orangefitness"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/orangefitness"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="./src/pages/sobre.html">Sobre a Academia</a></li>
+            <li><a href="./src/pages/termos.html">Termos de Uso</a></li>
+            <li>
+              <a href="./src/pages/politicas.html">Política de Privacidade</a>
+            </li>
+            <li><a href="./src/pages/faleConosco.html"></a></li>
+            <li><a href="./src/pages/faq.html">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Planos</h2>
+          <ul>
+            <li>
+              <a href="./src/pages/programas.html">Programas e Serviços</a>
+            </li>
+            <li><a href="./src/pages/inscricao.html">Matrícula</a></li>
+            <li><a href="./src/pages/contato.html">Contatos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Corporativo</h2>
+          <ul>
+            <li><a href="./src/pages/blog.html">Blog e Notícias</a></li>
+            <li><a href="./src/pages/depoimentos.html">Depoimentos</a></li>
+          </ul>
+        </div>
+      </section>
+      <p>&copy; 2023 Orange Fitness</p>
     </footer>
     <script src="../JS/script.js"></script>
-</body>
+  </body>
 </html>
