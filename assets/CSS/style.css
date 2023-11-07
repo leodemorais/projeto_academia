@@ -1,0 +1,50 @@
+@import url('./reset.css');
+@import url('./global.css');
+@import url('./componets/header.css');
+@import url('./componets/footer.css');
+
+body {
+    background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
+    background-size: cover;
+}
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    margin: 1rem;
+}
+
+#cart {
+    margin-top: 2rem;
+}
+
+#checkout {
+    margin-top: 1rem;
+}
+
+

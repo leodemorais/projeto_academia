@@ -3,54 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orange Fitness</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 
-    <title>Orange Fitness - Home</title>
+     <title>Carrinho de Compras</title>
   </head>
   <body>
     <header class="navegation">
-      <div>
-        <img src="" alt="logotipo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./assets/pages/carrinho.html">Carrinho</a></li>
-          <li><a href="./assets/pages/membros.html">Membros</a></li>
-          <li><a href="./assets/pages/galeria.html">Galeria</a></li>
-          <li><a href="./assets/pages/horario.html">Horários</a></li>
-        </ul>
-      </nav>
+        <a href="../../index.html"><img src="" alt="logo tipo da empresa"></a>                    
+        <nav>
+            <ul>               
+                <li><a href="./carrinho.html">Carrinho</a></li>
+                <li><a href="./membros.html">Membros</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./horario.html">Horários</a></li>    
+            </ul>
+        </nav>
     </header>
-    <main>
-      <h1>Bem-vindo à Orange Fitness</h1>
-      <section class="about">
-        <h2>Sobre Nós</h2>
-        <p>
-          A Orange Fitness é o lugar perfeito para alcançar seus objetivos de
-          condicionamento físico. Oferecemos uma ampla gama de programas de
-          treinamento, instrutores experientes e instalações de última geração.
-        </p>
-      </section>
-      <section class="hours">
-        <h2>Horário de Funcionamento</h2>
-        <p>
-          Segunda a Sexta: 6h - 22h<br />
-          Sábado: 8h - 18h<br />
-          Domingo: Fechado
-        </p>
-      </section>
-      <section class="location">
-        <h2>Localização</h2>
-        <p>
-          Endereço: Rua da Academia, 123<br />
-          Cidade, Estado, CEP: 12345-678
-        </p>
-      </section>
-      <section class="image">
-        <img src="academia.jpg" alt="Orange Fitness" />
-      </section>
-    </main>
+    <div class="container">
+      <h1>Escolha o Seu Plano</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano Básico</h5>
+              <p class="card-text">Plano de acesso básico à academia.</p>
+              <p class="card-text">$50/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano Básico', 50)"
+              >
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano Premium</h5>
+              <p class="card-text">
+                Plano de acesso premium com treinamento personalizado.
+              </p>
+              <p class="card-text">$80/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano Premium', 80)"
+              >
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plano VIP</h5>
+              <p class="card-text">
+                Plano VIP com acesso ilimitado a todas as instalações.
+              </p>
+              <p class="card-text">$100/mês</p>
+              <button
+                class="btn btn-primary"
+                onclick="addToCart('Plano VIP', 100)"
+              >
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2>Carrinho de Compras</h2>
+          <ul id="cart" class="list-group"></ul>
+          <p>Total: <span id="total">$0</span></p>
+          <button class="btn btn-success" id="checkout">
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <section>
         <img src="" alt="logotipo da academia" class="footerLogo" />
@@ -159,15 +197,15 @@
           <div class="footerLinkPage">
             <h2 class="footerTitler">Institucional</h2>
             <ul >
-              <li><a href="./assets/pages/sobre.html">Sobre a Academia</a></li>
-              <li><a href="./assets/pages/termos.html">Termos de Uso</a></li>
+              <li><a href="./sobre.html">Sobre a Academia</a></li>
+              <li><a href="./termos.html">Termos de Uso</a></li>
               <li>
-                <a href="./assets/pages/politicas.html"
+                <a href="./politicas.html"
                   >Política de Privacidade</a>
               </li>
-              <li><a href="./assets/pages/faleConosco.html">Fale Conosco</a></li>
+              <li><a href="./faleConosco.html">Fale Conosco</a></li>
               <li>
-                <a href="./assets/pages/faq.html">Perguntas Frequentes</a>
+                <a href="./faq.html">Perguntas Frequentes</a>
               </li>
             </ul>
           </div>
@@ -175,24 +213,24 @@
             <h2 class="footerTitler">Planos</h2>
             <ul>
               <li>
-                <a href="./assets/pages/programas.html">Programas e Serviços</a>
+                <a href="./programas.html">Programas e Serviços</a>
               </li>
-              <li><a href="./assets/pages/inscricao.html">Matrícula</a></li>
-              <li><a href="./assets/pages/contato.html">Contatos</a></li>
+              <li><a href="./inscricao.html">Matrícula</a></li>
+              <li><a href="./contato.html">Contatos</a></li>
             </ul>
           </div>
           <div  class="footerLinkPage">
             <h2 class="footerTitler">Corporativo</h2>
             <ul>
-              <li><a href="./assets/pages/blog.html">Blog e Notícias</a></li>
-              <li><a href="./assets/pages/depoimentos.html">Depoimentos</a></li>
+              <li><a href="./blog.html">Blog e Notícias</a></li>
+              <li><a href="./depoimentos.html">Depoimentos</a></li>
             </ul>
           </div>
         </div>
       </section>
       <section class="footerDisclaimer">
             <p>
-                *Consulte as condições promocionais e regulamentos na página: <a href="./assets/pages/contato.html"></a>
+                *Consulte as condições promocionais e regulamentos na página: <a href="./contato.html"></a>
             </p>              
             <p>
                 <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
@@ -204,6 +242,6 @@
            
       </section>     
     </footer>
-    <script src="./assets/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>
