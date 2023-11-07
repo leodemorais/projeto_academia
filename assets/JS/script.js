@@ -37,3 +37,4 @@ document.getElementById("checkout").addEventListener("click", () => {
     total = 0;
     updateCart();
 });
+
