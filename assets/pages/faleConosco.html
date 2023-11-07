@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orange Fitness</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
-
-    <title>Orange Fitness - Home</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <title>Fale Conosco</title>
+  
+</head>
+<body>
     <header class="navegation">
-      <div>
-        <img src="" alt="logotipo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./assets/pages/carrinho.html">Carrinho</a></li>
-          <li><a href="./assets/pages/membros.html">Membros</a></li>
-          <li><a href="./assets/pages/galeria.html">Galeria</a></li>
-          <li><a href="./assets/pages/horario.html">Horários</a></li>
-        </ul>
-      </nav>
+        <a href="../../index.html"><img src="" alt="logo tipo da empresa"></a>                    
+        <nav>
+            <ul>                                 
+              <li><a href="./carrinho.html">Carrinho</a></li>
+              <li><a href="./membros.html">Membros</a></li>
+              <li><a href="./galeria.html">Galeria</a></li>
+              <li><a href="./horario.html">Horários</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <h1>Bem-vindo à Orange Fitness</h1>
-      <section class="about">
-        <h2>Sobre Nós</h2>
-        <p>
-          A Orange Fitness é o lugar perfeito para alcançar seus objetivos de
-          condicionamento físico. Oferecemos uma ampla gama de programas de
-          treinamento, instrutores experientes e instalações de última geração.
-        </p>
-      </section>
-      <section class="hours">
-        <h2>Horário de Funcionamento</h2>
-        <p>
-          Segunda a Sexta: 6h - 22h<br />
-          Sábado: 8h - 18h<br />
-          Domingo: Fechado
-        </p>
-      </section>
-      <section class="location">
-        <h2>Localização</h2>
-        <p>
-          Endereço: Rua da Academia, 123<br />
-          Cidade, Estado, CEP: 12345-678
-        </p>
-      </section>
-      <section class="image">
-        <img src="academia.jpg" alt="Orange Fitness" />
-      </section>
+      <h1>Fale Conosco</h1>
+      <form action="processar_formulario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
     <footer class="footer">
       <section>
@@ -159,15 +142,15 @@
           <div class="footerLinkPage">
             <h2 class="footerTitler">Institucional</h2>
             <ul >
-              <li><a href="./assets/pages/sobre.html">Sobre a Academia</a></li>
-              <li><a href="./assets/pages/termos.html">Termos de Uso</a></li>
+              <li><a href="./sobre.html">Sobre a Academia</a></li>
+              <li><a href="./termos.html">Termos de Uso</a></li>
               <li>
-                <a href="./assets/pages/politicas.html"
+                <a href="./politicas.html"
                   >Política de Privacidade</a>
               </li>
-              <li><a href="./assets/pages/faleConosco.html">Fale Conosco</a></li>
+              <li><a href="./faleConosco.html">Fale Conosco</a></li>
               <li>
-                <a href="./assets/pages/faq.html">Perguntas Frequentes</a>
+                <a href="./faq.html">Perguntas Frequentes</a>
               </li>
             </ul>
           </div>
@@ -175,24 +158,24 @@
             <h2 class="footerTitler">Planos</h2>
             <ul>
               <li>
-                <a href="./assets/pages/programas.html">Programas e Serviços</a>
+                <a href="./programas.html">Programas e Serviços</a>
               </li>
-              <li><a href="./assets/pages/inscricao.html">Matrícula</a></li>
-              <li><a href="./assets/pages/contato.html">Contatos</a></li>
+              <li><a href="./inscricao.html">Matrícula</a></li>
+              <li><a href="./contato.html">Contatos</a></li>
             </ul>
           </div>
           <div  class="footerLinkPage">
             <h2 class="footerTitler">Corporativo</h2>
             <ul>
-              <li><a href="./assets/pages/blog.html">Blog e Notícias</a></li>
-              <li><a href="./assets/pages/depoimentos.html">Depoimentos</a></li>
+              <li><a href="./blog.html">Blog e Notícias</a></li>
+              <li><a href="./depoimentos.html">Depoimentos</a></li>
             </ul>
           </div>
         </div>
       </section>
       <section class="footerDisclaimer">
             <p>
-                *Consulte as condições promocionais e regulamentos na página: <a href="./assets/pages/contato.html"></a>
+                *Consulte as condições promocionais e regulamentos na página: <a href="./contato.html"></a>
             </p>              
             <p>
                 <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
@@ -204,6 +187,6 @@
            
       </section>     
     </footer>
-    <script src="./assets/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>
