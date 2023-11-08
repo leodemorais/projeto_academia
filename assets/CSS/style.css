@@ -2,6 +2,7 @@
 @import url('./global.css');
 @import url('./componets/header.css');
 @import url('./componets/footer.css');
+@import url('./componets/blog.css');
 
 body {
     background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
