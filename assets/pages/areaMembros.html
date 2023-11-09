@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
-  <title>Fale Conosco</title>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
+    <title>Área de Membros</title>
+   
 </head>
 <body>
-    <header class="navegation">
-        <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
-        <nav>
-            <ul>                                 
-              <li><a href="./carrinho.html">Carrinho</a></li>
-              <li><a href="./membros.html">Membros</a></li>
-              <li><a href="./galeria.html">Galeria</a></li>
-              <li><a href="./horario.html">Horários</a></li>
-            </ul>
-        </nav>
+    <header>
+        <header class="navegation">
+            <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
+            <nav>
+                <ul>                                 
+                  <li><a href="./carrinho.html">Carrinho</a></li>
+                  <li><a href="./membros.html">Membros</a></li>
+                  <li><a href="./galeria.html">Galeria</a></li>
+                  <li><a href="./horario.html">Horários</a></li>
+                </ul>
+            </nav>
+        </header>
     </header>
     <main>
-      <h1>Fale Conosco</h1>
-      <form action="processar_formulario.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="assunto">Assunto:</label>
-        <input type="text" id="assunto" name="assunto" required />
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-        <input type="submit" value="Enviar" />
-      </form>
+      <h1>Área de Membros</h1>
+      <section class="member-features">
+        <h2>Recursos para Membros</h2>
+        <ul>
+          <li>Agendamento de aulas online</li>
+          <li>Acompanhamento do progresso</li>
+          <li>Dicas exclusivas de treinamento</li>
+        </ul>
+      </section>
+      
     </main>
     <footer class="footer">
       <section>
@@ -182,9 +182,7 @@
             </p>   
             <p>
                 &copy; 2023 Orange Fitness
-            </p>    
-                
-           
+            </p>   
       </section>     
     </footer>
     <script src="../JS/script.js"></script>
