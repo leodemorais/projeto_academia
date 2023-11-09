@@ -3,9 +3,9 @@
 :root {
   font-size: 62.5%;
   --bg-img: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(231,81,11,1));
-  --color-primary: #ffffffff;
-  --color-primary: #e98080;
-  --color-text:#551313;
+  --color-primary: #dba0a0;
+  --color-sub:#5c0707;
+  --color-p: #111010;
   --color-bt: #d80f0f;
   
 }
