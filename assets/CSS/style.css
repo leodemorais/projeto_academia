@@ -3,11 +3,24 @@
 @import url('./componets/header.css');
 @import url('./componets/footer.css');
 @import url('./componets/blog.css');
+@import url('./componets/depoimentos.css');
+@import url('./componets/contato.css');
+@import url('./componets/sobre.css');
+@import url('./componets/faleConosco.css');
+@import url('./componets/faq.css');
+@import url('./componets/galeria.css');
+@import url('./componets/horarios.css');
+@import url('./componets/incricao.css');
+@import url('./componets/membros.css');
+@import url('./componets/politica.css');
+@import url('./componets/programas.css');
+@import url('./componets/termos.css');
 
 body {
     background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
     background-size: cover;
 }
+
 main {
     max-width: 80rem;
     margin: 0 auto;
@@ -22,17 +35,11 @@ section {
    
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-body {
-    margin: 2rem;
-}
-
 h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.6rem;
+    margin: 2rem;
     text-align: center;
 }
 
