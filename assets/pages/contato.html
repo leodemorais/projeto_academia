@@ -40,17 +40,19 @@
         <p>Telefone: (123) 456-7890</p>
         <p>E-mail: contato@orangefitness.com</p>
       </section>
-      
-      <section class="map">
-        <h2>Localização</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-12.3456789!3d34.5678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ4JzQ0LjAiUyAxMzIsNDAuMyJF!5e0!3m2!1sen!2sus!4v1569921707431!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-        ></iframe>
+      <section class="contact-form">
+        <h2>Formulário de Contato</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
       </section>
     </main>
     <footer class="footer">

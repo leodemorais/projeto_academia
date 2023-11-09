@@ -16,14 +16,27 @@ ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
 }
 
 ul li a {
-  opacity: 1;  
+  opacity: 1;
+  transition: all .3s ease-in-out;
 }
 
 ul li a:hover {
-  font-weight: bold;
-  opacity: 0.5;
+  transform: scale(.9) translateY(-2px);
+  opacity: 0.7;
+}
+
+li {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
