@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/3734orangelogo4.ico" 
+    type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f5e3366878.js" crossorigin="anonymous"></script>
     <title>Contato</title>
    
   </head>
@@ -21,42 +23,48 @@
         </nav>
     </header>
     <main>
-      <h1>Contato</h1>
-      <div class="contactInfo">
-        <section>
-          <h2>Informações de Contato</h2>
-           <address>
-            <p>
-              <a href="tel:+551234567890" alt="numero de telefone da empresa">Telefone:(123) 456-7890</a>
-            </p>
-            <p>
-              <a href="mailto:contato@orangefitness.com" alt="contato de email da empresa">E-mail: contato@orangefitness.com</a> 
-            </p>    
-          </address>         
+     <div class="herder">     
+      <img src="../images/contato.jpg" alt="imagem de contato" class="imgMain">
+       <h1>Contato</h1>
+     </div>   
+     
+     <section class="contact">
+        <section class="contactInfo">
+          <div class="contacInfo__container">
+            <h2>Informações de Contato</h2>
+            <span>
+              <i class="fa-solid fa-phone-flip fa-lg" style="color: #512b1f;"></i>
+              (123) 456-7890
+            </span>
+            <span>
+              <i class="fa-brands fa-whatsapp fa-lg" style="color: #512b1f;"></i>         
+            +55(12) 99999-9999
+            </span>
+            <span>
+              <i class="fa-solid fa-envelope fa-lg" style="color: #512b1f;"></i>
+              contato@orangefitness.com
+            </span>      
+            <h2>Venha conhecer a nossa Academia</h2> 
+            <span>
+              <i class="fa-solid fa-location-dot fa-lg" style="color: #512b1f;"></i>
+              Endereço: Rua Benjamim Costanta, 960 
+              Santa Maria, RS, CEP: 97050-022     
+            </span>        
+          </div>
         </section>
-      </div>
-       <form>
-        <fieldset class="contactForm">
-          <div class="fieldsetWrapper">          
-          <legend>Formulário de Contato</legend>
-            <div class="input-wrapper"> 
-               <label for="nome">Nome <span>(mínimo 8 caracteres)</span>:</label>               
-              <input type="text" id="nome" name="nome" required minlength="8"/>                         
-            </div>
-            <div class="input-wrapper">
-              <label for="email">E-mail <span>(digite um email válido)</span>:</label>
-              <input type="email" id="email" name="email" required/>                            
-            </div>
-            <div class="input-wrapper">
-              <label for="mensagem">Mensagem:</label>   
-              <textarea id="mensagem" name="mensagem" rows="4" required></textarea>                         
-            </div>          
-            <div>              
-              <button type="submit" class="button">Enviar Mensagem</button>  
-            </div>
-         </div>
-        </fieldset>                 
-     </form>      
+        <section class="contactForm">
+          <form class="contactForm__container">        
+            <h2>Formulário de Contato</h2>
+            <label for="nome">Nome <span >(mínimo 8 caracteres)</span>:</label>               
+            <input type="text" id="nome" name="nome" required minlength="8"/>  
+            <label for="email">E-mail <span>(digite um email válido)</span>:</label>
+            <input type="email" id="email" name="email" required/>  
+            <label for="mensagem">Mensagem:</label>   
+            <input type="text" id="mensagem">  
+            <button type="submit" class="button">Enviar Mensagem</button>     
+          </form>      
+        </section>
+     </section>       
     </main>
     <footer class="footer">
       <section>

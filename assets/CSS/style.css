@@ -4,7 +4,7 @@
 @import url('./componets/footer.css');
 @import url('./componets/blog.css');
 @import url('./componets/depoimentos.css');
-@import url('./compgitonets/contato.css');
+@import url('./componets/contato.css');
 @import url('./componets/sobre.css');
 @import url('./componets/faleConosco.css');
 @import url('./componets/faq.css');
@@ -16,6 +16,7 @@
 @import url('./componets/programas.css');
 @import url('./componets/termos.css');
 
+
 body {
     background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
     background-size: cover;
@@ -24,8 +25,8 @@ body {
 main {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem;
     background-color: #fff;
+
 }
 
 
