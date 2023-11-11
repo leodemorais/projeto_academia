@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 footer {
   display: block;
 }
+
 .footer {
   width: 100%;
 }
@@ -9,7 +9,7 @@ footer {
 .footer section {
   min-width: 120rem;
   margin: 0 auto;
-  padding: 3rem 0 0;
+  padding: 3rem 0 ;
   
   display: flex;
   flex-direction: column;
@@ -113,123 +113,3 @@ footer {
   text-decoration: none;
   color: inherit;
 }
-
-
-=======
-footer {
-  display: block;
-}
-.footer {
-  width: 100%;
-}
-
-.footer section {
-  min-width: 120rem;
-  margin: 0 auto;
-  padding: 3rem 0 0;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 1px solid #c2c2c2;
-  color: var(--color-primary);
-}
-
-.footerLinks section a {
-  text-decoration: none;
-}
-
-.footerLogo {
-  display: block;
-  margin: 0 auto;  
-}
-
-.footerLogo img {
-  height: auto;
-  border-style: solid;
-}
-
-.footerTitler {
-  margin: 0 0 2.5rem;
-  font-size: 2rem;
-  line-height: 2.4rem;
-}
-
-.footerTitler h2 {
-  display: block;  
-}
-
-.footerSocial {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  grid-gap: 1.5rem;
-  gap: 1.5rem;
-}
-
-.footerSocial ul {
-  list-style: none;
-  align-items: center;
-}
-
-.footerSocial ul li {
-  display: list-item;
-  text-align: match-parent;
-  text-align: -webkit-match-parent;  
-}
-
-.footerSocial ul li a {
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.footerLink {
-  display: flex;
-  flex-direction: row;
-  grid-gap: 5rem;
-  gap: 10rem;
-}
-
-.footerLink div {
-    margin-left: 2rem;
-}
-
-.footerLink .footerLinkPage ul  {
-  display: flex;
-  flex-direction: column;
-}
-
-.footerLink .footerLinkPage ul li a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-  color: inherit;
-}
-
-.footer section:last-child {
-  border-bottom: none;
-}
-
-.footerDisclaimer  {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-}
-
-.footerDisclaimer p {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-.footerDisclaimer p a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
->>>>>>> master

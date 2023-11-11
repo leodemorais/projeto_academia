@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 :root {
@@ -14,21 +14,4 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
-:root {
-  font-size: 62.5%;
-  --bg-img: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(231,81,11,1));
-  --color-primary: #dba0a0;
-  --color-sub:#5c0707;
-  --color-p: #000;
-  --color-bt: #d80f0f;
-  --color-text: #fff;
-  --color-icon: #512b1f;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
->>>>>>> master
 }
