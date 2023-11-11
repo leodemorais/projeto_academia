@@ -9,7 +9,6 @@
 @import url('./componets/faleConosco.css');
 @import url('./componets/faq.css');
 @import url('./componets/galeria.css');
-@import url('./componets/horarios.css');
 @import url('./componets/incricao.css');
 @import url('./componets/membros.css');
 @import url('./componets/politica.css');
@@ -26,14 +25,11 @@ main {
     max-width: 80rem;
     margin: 0 auto;
     background-color: #fff;
-
 }
-
 
 section {
     margin-bottom: 2rem;
-    padding: 2rem;
-   
+    padding: 2rem;   
 }
 
 h1 {
@@ -55,5 +51,3 @@ h1 {
 #checkout {
     margin-top: 1rem;
 }
-
-
