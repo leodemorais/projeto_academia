@@ -24,10 +24,12 @@ footer {
 
 .footerLogo {
   display: block;
-  margin: 0 auto;  
+  margin: 0 auto; 
+   width: 40rem; 
 }
 
 .footerLogo img {
+ 
   height: auto;
   border-style: solid;
 }
