@@ -5,51 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
-    <title>Perguntas Frequentes (FAQ)</title>
-    
-  </head>
-  <body>
-    <header class="navegation">
-        <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
-        <nav>
-            <ul>               
-              <li><a href="./carrinho.html">Carrinho</a></li>
-              <li><a href="./membros.html">Membros</a></li>
-              <li><a href="./galeria.html">Galeria</a></li>
-              <li><a href="./horario.html">Horários</a></li>
-            </ul>
-        </nav>
+    <title>Área de Membros</title>
+   
+</head>
+<body>
+    <header>
+        <header class="navegation">
+            <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
+            <nav>
+                <ul>                                 
+                  <li><a href="./carrinho.html">Carrinho</a></li>
+                  <li><a href="./membros.html">Membros</a></li>
+                  <li><a href="./galeria.html">Galeria</a></li>
+                  <li><a href="./horario.html">Horários</a></li>
+                </ul>
+            </nav>
+        </header>
     </header>
     <main>
-      <h1>Perguntas Frequentes (FAQ)</h1>
-      <section class="faq">
-        <h2>Perguntas Frequentes</h2>
-        <h3>Como faço para me inscrever na academia?</h3>
+      <h1>Área de Membros</h1>
+      <section class="member-features">
+        <h2>Recursos para Membros</h2>
+        <ul>
+          <li>Agendamento de aulas online</li>
+          <li>Acompanhamento do progresso</li>
+          <li>Dicas exclusivas de treinamento</li>
+        </ul>
+      </section>
+      <section class="member-login">
+        <h2>Login de Membros</h2>
         <p>
-          Você pode se inscrever pessoalmente em nossa recepção ou preenchendo o
-          formulário de inscrição online em nosso site.
+          Seja bem-vindo à nossa Área de Membros. Faça o login para acessar
+          recursos exclusivos:
         </p>
+        <form>
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required />
 
-        <h3>Quais são os preços das assinaturas mensais?</h3>
-        <p>
-          Nossos preços variam dependendo do plano escolhido. Para obter
-          informações detalhadas sobre preços, entre em contato com nossa
-          equipe.
-        </p>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
 
-        <h3>Qual é a política de cancelamento?</h3>
-        <p>
-          Você pode cancelar sua assinatura a qualquer momento, mas é necessário
-          um aviso prévio de 30 dias. Entre em contato conosco para obter mais
-          detalhes.
-        </p>
-
-        <h3>Quais programas de treinamento estão disponíveis?</h3>
-        <p>
-          Oferecemos uma variedade de programas, incluindo musculação, aulas de
-          grupo, ioga, e muito mais. Consulte a seção "Programas e Serviços"
-          para obter mais informações.
-        </p>
+          <button type="submit">Login</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
@@ -174,7 +171,7 @@
             </p>   
             <p>
                 &copy; 2023 Orange Fitness
-            </p>    
+            </p>   
       </section>     
     </footer>
     <script src="../JS/script.js"></script>

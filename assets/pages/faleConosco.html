@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
-    <title>Perguntas Frequentes (FAQ)</title>
-    
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
+  <title>Fale Conosco</title>
+  
+</head>
+<body>
     <header class="navegation">
         <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
         <nav>
-            <ul>               
+            <ul>                                 
               <li><a href="./carrinho.html">Carrinho</a></li>
               <li><a href="./membros.html">Membros</a></li>
               <li><a href="./galeria.html">Galeria</a></li>
@@ -21,36 +21,18 @@
         </nav>
     </header>
     <main>
-      <h1>Perguntas Frequentes (FAQ)</h1>
-      <section class="faq">
-        <h2>Perguntas Frequentes</h2>
-        <h3>Como faço para me inscrever na academia?</h3>
-        <p>
-          Você pode se inscrever pessoalmente em nossa recepção ou preenchendo o
-          formulário de inscrição online em nosso site.
-        </p>
-
-        <h3>Quais são os preços das assinaturas mensais?</h3>
-        <p>
-          Nossos preços variam dependendo do plano escolhido. Para obter
-          informações detalhadas sobre preços, entre em contato com nossa
-          equipe.
-        </p>
-
-        <h3>Qual é a política de cancelamento?</h3>
-        <p>
-          Você pode cancelar sua assinatura a qualquer momento, mas é necessário
-          um aviso prévio de 30 dias. Entre em contato conosco para obter mais
-          detalhes.
-        </p>
-
-        <h3>Quais programas de treinamento estão disponíveis?</h3>
-        <p>
-          Oferecemos uma variedade de programas, incluindo musculação, aulas de
-          grupo, ioga, e muito mais. Consulte a seção "Programas e Serviços"
-          para obter mais informações.
-        </p>
-      </section>
+      <h1>Fale Conosco</h1>
+      <form action="processar_formulario.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
     <footer class="footer">
       <section>
