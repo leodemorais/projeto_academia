@@ -8,7 +8,7 @@ footer {
 .footer section {
   min-width: 120rem;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
   
   display: flex;
   flex-direction: column;
