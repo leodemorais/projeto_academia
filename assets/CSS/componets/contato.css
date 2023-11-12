@@ -1,13 +1,3 @@
-.herder {
-    display: flex;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
-.heder .imgMain {
-  width: 100%;
-}
 
 .herder h1 {
   position: absolute;
@@ -29,6 +19,10 @@
   padding: 0;
 }
 
+.contact .contactInfo {
+  background-color: var(--color-text);
+  padding: 4rem ;
+}
 .contact .contactInfo h2 {
   margin: 0;
   margin-bottom: 1.875rem;
@@ -37,9 +31,7 @@
 }
 
 
-.contactInfo {
-  padding: 4rem ;
-}
+
 
 .contactInfo__container {
   float: right;
@@ -164,7 +156,3 @@
 .button a:hover {
   color: black;
 }
-
- 
-
-

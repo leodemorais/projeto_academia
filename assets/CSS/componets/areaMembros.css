@@ -1,0 +1,30 @@
+body {
+  background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
+  background-size: cover;
+}
+.geral {
+  max-width: 80rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.card {
+  margin: 1rem;
+}
+
+#cart {
+  margin-top: 2rem;
+}
+
+#checkout {
+  margin-top: 1rem;
+}
