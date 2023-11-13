@@ -9,7 +9,7 @@ main {
   text-align: center;
 }
 
- .termo h2 {
+.about h2 {
   font-size: 2rem;
   line-height: 1.6rem;
   color: var(--color-sub);
@@ -21,7 +21,7 @@ main {
 p {
   font-size: 1.6rem;
   line-height: 1.5;
-  color: var(--color-);
+  color: var(--color-p);
   padding-top: 2rem;
 }
 
