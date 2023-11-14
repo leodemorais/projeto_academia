@@ -1,13 +1,6 @@
-body {
-  background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
-  background-size: cover;
+.imgPriv {
+  width: 100%;
 }
-.geral {
-  max-width: 80rem;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
 h1 {
   font-size: 3em;
   font-weight: 700;
@@ -16,14 +9,40 @@ h1 {
   text-align: center;
 }
 
-.card {
-  margin: 1rem;
+.privacyPolicy {
+  background-color:  #fff;
+  padding: 4.5rem 0;
 }
 
-#cart {
-  margin-top: 2rem;
+ .privacyPolicy h2 {
+  font-size: 2rem;
+  line-height: 1.6rem;
+  color: var(--color-sub);
+  border-bottom: 2px solid var(--color-icon);
+  padding: 3.6rem 0 1.8rem;
+  margin: 0 auto;
 }
 
-#checkout {
-  margin-top: 1rem;
+.privacyPolicy p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-icon);
+  padding-top: 2rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.privacyPolicy-itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 1rem;
+  padding: 2rem;
+  
+}
+.privacyPolicy-itens li {
+ list-style-type: circle;
+ color: var(--color-icon);
+ margin-left: 2rem;
 }
