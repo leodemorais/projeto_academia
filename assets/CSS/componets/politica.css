@@ -1,26 +1,10 @@
 .imgPriv {
   width: 100%;
 }
-h1 {
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 1.6rem;
-  margin: 2rem;
-  text-align: center;
-}
 
 .privacyPolicy {
   background-color:  #fff;
   padding: 4.5rem 0;
-}
-
- .privacyPolicy h2 {
-  font-size: 2rem;
-  line-height: 1.6rem;
-  color: var(--color-sub);
-  border-bottom: 2px solid var(--color-icon);
-  padding: 3.6rem 0 1.8rem;
-  margin: 0 auto;
 }
 
 .privacyPolicy p {

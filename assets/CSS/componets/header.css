@@ -32,25 +32,3 @@ ul li a:hover {
   opacity: 0.7;
 }
 
-.herder {
-  display: flex;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
-.heder {
-  width: 100%;
-}
-
-.herder h1 {
-  position: absolute;
-  top: 1rem;
-  right: 40%;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 1.6rem;
-  margin: 2rem;
-  text-align: center;
-  color: var(--color-text);
-}

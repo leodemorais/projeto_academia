@@ -1,0 +1,222 @@
+/*Media query Navegatin*/
+/* Media query for 1024px screens */
+@media (max-width: 1024px) {
+  .navegation {
+    justify-content: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin-bottom: 1rem;
+  }
+
+  herder h1 {
+    right: 50%;
+  }
+}
+
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  .navegation {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .menuLinks {
+    display: none;
+  }
+  
+  .menuLinks.active {
+    display: block;
+  }
+  
+  .menuLinks ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menuLinks ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menuLinks ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.8rem;
+  }
+  
+  /* Estilos para o botão do menu */
+  .menuBTN {
+    display: block;
+    cursor: pointer;
+    padding: 3.5rem;
+  }
+
+  .btn-line {
+    width: 3.5rem;
+    height: .8rem;
+    background: #333;
+    margin: 5px 0;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  .herder h1 {
+    font-size: 2.5em;
+  }
+}
+  
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .navegation {
+    margin-bottom: 3rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .herder h1 {
+    font-size: 1.8em;
+  }
+}
+
+
+/*Media query Geral*/
+/* Media query for 1024px screens */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .footerLink {
+    gap: 20rem;
+}
+}
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .herder h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about h2 {
+    font-size: 1.4rem;
+    padding: 2.6rem 0 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-top: 1.6rem;
+  }
+
+  .termo .ultimo {
+    padding-bottom: 1.6rem;
+  }
+}
+
+/*Media query do Footer*/
+
+/* Media query for 1024px screens */
+@media (max-width: 1024px) {
+  .footer section {
+    min-width: auto;
+  }
+
+  .footerLogo {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .footerLink {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+
+}
+
+/* Media query for 768px screens */
+@media (max-width: 768px) {
+  .footer section {
+    min-width: auto;
+  }
+
+  .footerLogo {
+    width: 90%; /* Adjust the width as needed */
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerLink {
+    gap: 2rem; /* Adjust the gap as needed */
+  }
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .footer section {
+    padding: 1.5rem 0.5rem; /* Adjust the padding for smaller screens */
+  }
+
+  .footerLogo {
+    width: 30%; /* Adjust the width for smaller screens */
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerTitler {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    line-height: 1.8rem; /* Adjust the line height for smaller screens */
+  }
+
+  .footerLinkPage {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footerLink .footerLinkPage h2 {
+    font-size: 1.6rem; /* Adjust the font size for smaller screens */
+  }
+
+  .footerLink .footerLinkPage ul li a {
+    font-size: 1.3rem; /* Adjust the font size for smaller screens */
+    line-height: 1.5rem; /* Adjust the line height for smaller screens */
+  }
+
+  .footerDisclaimer {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+    line-height: 1.2rem; /* Adjust the line height for smaller screens */
+  }
+}

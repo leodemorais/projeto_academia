@@ -1,3 +1,4 @@
+
 let cart = [];
 let total = 0;
 
