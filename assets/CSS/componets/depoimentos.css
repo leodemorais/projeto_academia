@@ -6,13 +6,6 @@
   padding: 3rem 0;
   flex-direction: column;
 }
-.testimony h2 {
-  font-size: 2rem;
-  color: var(--color-sub);
-  text-align: center;
-  line-height: 1.6rem;
-  margin-bottom: 3rem;
-}
 
 .testimony p {
   width: 85%;

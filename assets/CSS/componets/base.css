@@ -1,0 +1,50 @@
+body {
+  background-image: var(--bg-img); /* Adicione sua imagem de fundo desejada */
+  background-size: cover;
+}
+main {
+  background-color:  #fff;
+  text-align: center;
+}
+
+.herder {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.img {
+  width: 100%;
+}
+
+.herder h1 {
+  position: absolute;
+  top: 1rem;
+  right: 40%;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.6rem;
+  color: var(--color-sub);
+  border-bottom: 2px solid var(--color-icon);
+  padding: 3.6rem 0 1.8rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-icon);
+  padding-top: 2rem;
+}

@@ -1,5 +1,7 @@
 @import url('./reset.css');
 @import url('./global.css');
+@import url('./componets/base.css');
+@import url('./componets/@mediaQuery.css');
 @import url('./componets/index.css');
 @import url('./componets/header.css');
 @import url('./componets/footer.css');
