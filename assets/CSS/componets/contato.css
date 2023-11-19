@@ -1,3 +1,7 @@
+.herder .imgContact {
+  width: 100%;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -139,4 +143,49 @@
 
 .button a:hover {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .herder .herderTraining {   
+    font-size: 2rem;
+    top: 2rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr; /* Adjust the layout to a single column */
+    margin-bottom: -1rem; /* Modify negative margin if needed */
+  }
+  .contact .contactInfo,
+  .contact .contactForm {
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .contactInfo__container,
+  .contactForm__container {
+    width: 100%; /* Set width to full for smaller screens */
+    padding: 0; /* Adjust padding if needed */
+    margin-bottom: 2rem; /* Add space between sections */
+  }
+
+  .contactInfo h2:nth-of-type(2) {
+    margin-top: 2rem; /* Modify spacing between headings */
+  }
+
+  .contactForm h2 {
+    margin-right: 0; /* Adjust margin if needed */
+  }
+  
+  /* You can add more specific styles for smaller screens as needed */
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .header .herderTraining {
+    font-size: 1.5rem;
+    top: 1rem;
+    line-height: 4rem;
+  }
+  .imgContact {
+    height: auto;
+  }
 }

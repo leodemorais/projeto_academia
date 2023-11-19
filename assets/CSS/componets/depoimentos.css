@@ -1,3 +1,7 @@
+.imgTestimony {
+  width: 100%;
+}
+
 .testimony{
   display: flex;
   justify-content: center;
@@ -12,4 +16,11 @@
   max-width: 90ch;  
   font-size: 1.4rem;
   color: var(--color-p)
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .imgTestimony {
+    height: auto;
+  }
 }
