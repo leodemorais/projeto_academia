@@ -9,3 +9,11 @@
 .faq-pg {
   padding-bottom: 2rem;
 }
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  
+  .imgFAQ {
+    height: auto;
+  }
+}

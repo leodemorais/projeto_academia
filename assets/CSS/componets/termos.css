@@ -1,14 +1,26 @@
 .imgTerm {
-  height: 50rem;
+  max-width: 100%;
+  margin: 0 3rem;
 }
 .termo .ultimo {
   padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .imgTerm {
+    height: auto;
+    margin: 0;
+  }
 }
 
 /* Media query for 375px screens */
 @media (max-width: 375px) {
   .termo .ultimo {
     padding-bottom: 1.6rem;
+  }
+  .imgTerm {
+    height: auto;
+    margin: 0;
   }
 }
 

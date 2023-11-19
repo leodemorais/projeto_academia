@@ -12,13 +12,48 @@
 
 .aboutValue li {
   display: flex;
+  margin: 0 3rem;
 }
 
 .aboutValue li img {
   max-width: 3rem;
   min-width: 3rem;
-  margin-right: 2rem;
-  color: var(--color-sub);
 }
 
+.aboutValue li img .aboutValue_span {
+  font-size: 1.4rem;
+  line-height: 1.8rem;  
+}
 
+@media (max-width: 768px) {
+  .about .aboutValue {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutValue li {
+    display: flex;
+    margin: 0 .2rem
+  }
+
+  .aboutValue li img {
+    max-width: 1rem;
+  }
+
+  .aboutValue_span {
+    font-size: 1rem;
+    line-height: 1rem;  
+  }
+}
+
+@media (max-width: 735px) {
+  .about .aboutValue {
+    display: block;
+    flex-direction: row;
+    padding: ;
+  }
+  .aboutValue li {
+    display: flex;
+    padding: .5rem;
+  }
+}
