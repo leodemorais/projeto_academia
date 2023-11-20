@@ -111,4 +111,5 @@ function verificarUsuarioSenha(usuario, senha) {
       window.location.href = "pagina-principal.html";
     }
   }
+
   
