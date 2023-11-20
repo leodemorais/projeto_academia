@@ -1,3 +1,4 @@
+/*- Script para a página de carrinho */
 
 let cart = [];
 let total = 0;
