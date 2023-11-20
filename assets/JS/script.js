@@ -1,3 +1,4 @@
+/*- Script para a página de carrinho */
 
 let cart = [];
 let total = 0;
@@ -110,4 +111,5 @@ function verificarUsuarioSenha(usuario, senha) {
       window.location.href = "pagina-principal.html";
     }
   }
+
   
