@@ -25,11 +25,14 @@
       </ul>
     </nav>
   </header>
-    <main class="geral">
-      <h1>Inscrição Online</h1>
-      <section class="registration-form">
-        <h2>Formulário de Inscrição</h2>
-        <form>
+
+  <!--SetordeNavegaçãoInscrição-->
+    
+  <div class ="page">
+    <form method="POST" class="formLogin">
+      <h1>Solicitação de Matrícula</h1>
+      <p>Preencha os campos abaixo</p>
+        
           <label for="nome">Nome Completo:</label>
           <input type="text" id="nome" name="nome" required />
 
@@ -39,24 +42,26 @@
           <label for="telefone">Telefone:</label>
           <input type="tel" id="telefone" name="telefone" required />
 
-          <label for="plano">Plano de Assinatura:</label>
+          <label for="plano">Escolha seu plano de assinatura:</label>
           <select id="plano" name="plano">
             <option value="plano1">Plano Básico</option>
             <option value="plano2">Plano Premium</option>
             <option value="plano3">Plano VIP</option>
           </select>
 
-          <label for="pagamento">Forma de Pagamento:</label>
+          <label for="pagamento">Escolha sua forma de pagamento:</label>
           <select id="pagamento" name="pagamento">
             <option value="cartao">Cartão de Crédito</option>
             <option value="pix">Pix</option>
             <option value="boleto">Boleto Bancário</option>
           </select>
-
-          <button type="submit">Enviar Inscrição</button>
+          <br>
+          <input type="submit" value="Enviar Solicitação" class="btn" />
+         
         </form>
-      </section>
-    </main>
+    </div>
+      
+    
     <footer class="footer">
       <section>
         <img src="../images/4.png" alt="logotipo da academia" class="footerLogo" />
