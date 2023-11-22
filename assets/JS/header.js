@@ -1,6 +1,7 @@
-const menuBtn = document.querySelector('.menuBTN');
-const menu = document.querySelector('.menuLinks');
+function openNav( ) {
+  document.getElementById('myNav').style.width = '100%';
+}
 
-menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+function closeNav( ) {
+  document.getElementById('myNav').style.width = '0';  
+}

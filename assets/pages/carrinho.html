@@ -15,20 +15,22 @@
   </head>
   <body>
     <header class="navegation">
-      <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logo tipo da empresa"></a>                    
-      <div class="menuBTN">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <nav>
-        <ul class="menuLinks">               
-          <li><a href="./carrinho.html">Carrinho</a></li>
-          <li><a href="./membros.html">Membros</a></li>
-          <li><a href="./galeria.html">Galeria</a></li>
-          <li><a href="./programas.html">Programas de Treinamento</a></li>
-        </ul>
-      </nav>
+      <img src="./assets/images/orangelogozero.png" alt="logo tipo da empresa"> 
+      <div class= "overlay" id="myNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menuLinks overlay-content">
+          <a href="../../index.html" title="homer"></a>              
+          <a href="./carrinho.html" title="Produtos" class="overlay-prodoct">Produtos</a>
+          <a href="./membros.html" title="Membros">Membros</a>
+          <a href="./galeria.html" title="Gareria de fotos">Galeria de Fotos</a>
+          <a href="./programas.html" title="Modalidade">Modalidades</a>
+          <a href="./contato.html" title="Contato">Contato</a>
+          <a href="./faq.html" title="perguntas frequentes"> Perguntas Frequentes</a>
+        </div>
+     </div>
+     <button class="nav-button" onclick="openNav()" title="botão de menu">
+        <i class="fa-solid fa-bars fa-2x"></i>
+     </button>
     </header>
     <div class="container">
       <h1>Escolha o Seu Plano</h1>

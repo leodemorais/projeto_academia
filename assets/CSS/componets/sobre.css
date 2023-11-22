@@ -50,7 +50,6 @@
   .about .aboutValue {
     display: block;
     flex-direction: row;
-    padding: ;
   }
   .aboutValue li {
     display: flex;
