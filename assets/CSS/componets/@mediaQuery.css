@@ -1,74 +1,101 @@
 /*Media query Navegatin*/
 /* Media query for 1024px screens */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .navegation {
     justify-content: center;
   }
+  
 
-  ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  ul li {
-    margin-bottom: 1rem;
-  }
 
   herder h1 {
     right: 50%;
+  }
+  .nav-button, .closebtn {
+    display: none;
   }
 }
 
 /* Media query for 768px screens */
 @media (max-width: 768px) {
-  .navegation {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-  }
-
-  .menuLinks {
-    display: none;
-  }
-  
-  .menuLinks.active {
-    display: block;
-  }
-  
-  .menuLinks ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menuLinks ul li {
-    margin-bottom: 10px;
-  }
-  
-  .menuLinks ul li a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1.8rem;
-  }
-  
-  /* Estilos para o botão do menu */
-  .menuBTN {
-    display: block;
+  .nav-button {
+    border: 0;
+    border-radius: .4rem;
+    padding: .8rem;
+    background-color: transparent;
+    margin: .8rem;
     cursor: pointer;
-    padding: 3.5rem;
   }
 
-  .btn-line {
-    width: 3.5rem;
-    height: .8rem;
-    background: #333;
-    margin: 5px 0;
+  .nav-button i {
+    color: #fff;
   }
 
-  nav ul {
-    gap: 1rem;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    /*background-color: rgb(0, 0, 0);*/
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    transition: all 0.5s;   
   }
 
-  .herder h1 {
-    font-size: 2.5em;
+  .overlay-content {
+    position: relative;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .overlay a {
+    padding: .8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #818181;   
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus  {
+    color: #f1f1f1;
+  }
+  .overlay .closebtn {
+    top: 3.5rem;
+    right: 4.5rem;
+    font-size: 6rem;
+  }
+  @media screen and (max-height: 375px) {
+    .overlay a {
+      font-size: 1.5rem;
+    }
+    .overlay, .closebtn {
+      font-size: 1.5rem;
+      top: 1.5rem;
+      right: 2.5rem;
+    }
+  }
+
+  .overlay-prodoct {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: .4rem .2rem;
+  border-radius: 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--color-bt);
+  padding-bottom: 2rem;
   }
 }
   

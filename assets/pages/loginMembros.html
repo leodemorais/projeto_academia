@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
     <title>Área de Membros</title>
@@ -10,34 +11,47 @@
 </head>
 <body>
   <header class="navegation">
-    <a href="../../index.html"><img src="../images/orangelogozero.png" alt="logotipo da empresa"></a>                    
-    <div class="menuBTN">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <nav>
-      <ul class="menuLinks">
-        <li><a href="../../index.html">Home</a></li>               
-        <li><a href="./carrinho.html">Carrinho</a></li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./programas.html">Modalidades</a></li>
-      </ul>
-    </nav>
-  </header>     
-          
-       <!--SetordeNavegaçãoLogin-->
- 
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" required/>
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" required/>
-            <a href="/">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
+    <img src="../images/orangelogozero.png" alt="logo tipo da empresa"> 
+    <div class= "overlay" id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="menuLinks overlay-content">
+        <a href="../../index.html" title="homer"></a>              
+        <a href="./carrinho.html" title="Produtos" class="overlay-prodoct">Produtos</a>
+        <a href="./membros.html" title="Membros">Membros</a>
+        <a href="./galeria.html" title="Gareria de fotos">Galeria de Fotos</a>
+        <a href="./programas.html" title="Modalidade">Modalidades</a>
+        <a href="./contato.html" title="Contato">Contato</a>
+        <a href="./faq.html" title="perguntas frequentes"> Perguntas Frequentes</a>
+      </div>
+   </div>
+   <button class="nav-button" onclick="openNav()" title="botão de menu">
+      <i class="fa-solid fa-bars fa-2x"></i>
+   </button>
+  </header> 
+      <h1>Área de Membros</h1>
+      <section class="member-features">
+        <h2>Recursos para Membros</h2>
+        <ul>
+          <li>Agendamento de aulas online</li>
+          <li>Acompanhamento do progresso</li>
+          <li>Dicas exclusivas de treinamento</li>
+        </ul>
+      </section>
+    
+      <section class="member-login">
+        <h2>Login de Membros</h2>
+        <p>
+          Seja bem-vindo à nossa Área de Membros. Faça o login para acessar
+          recursos exclusivos:
+        </p>
+        <form>
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
         </form>
     </div>
   

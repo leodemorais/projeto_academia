@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   margin-bottom: 5.5rem;
   background-color: rgba(0, 0, 0, 0.0);
 }
 
-ul {
+.overlay .menuLinks {
   display: flex;
   list-style: none;
   gap: 4.8rem;
@@ -14,21 +15,21 @@ ul {
   padding: 0;  
 }
 
-nav ul li a {
+.overlay .menuLinks a {
   text-decoration: none;
   color: var(--color-primary);
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.4rem;
+  text-align: center;
 }
 
-ul li a {
+.overlay .menuLinks a {
   opacity: 1;
   transition: all .3s ease-in-out;
 }
 
-ul li a:hover {
+.menuLinks a:hover {
   transform: scale(.9) translateY(-2px);
   opacity: 0.7;
 }
-
