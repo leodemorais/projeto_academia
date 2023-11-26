@@ -1,12 +1,6 @@
 /*Media query Navegatin*/
 /* Media query for 1024px screens */
 @media (min-width: 1024px) {
-  .navegation {
-    justify-content: center;
-  }
-  
-
-
   herder h1 {
     right: 50%;
   }
@@ -17,6 +11,16 @@
 
 /* Media query for 768px screens */
 @media (max-width: 768px) {
+  .overlay .linkPrimarary, .overlay .linkSecundary .search-box, .overlay .linkSecundary .linkSecundary-button {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .nav-button {
     border: 0;
     border-radius: .4rem;
@@ -69,6 +73,8 @@
     right: 4.5rem;
     font-size: 6rem;
   }
+
+
   @media screen and (max-height: 375px) {
     .overlay a {
       font-size: 1.5rem;
