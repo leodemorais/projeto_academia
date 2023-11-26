@@ -41,7 +41,7 @@ footer {
 }
 
 .footerTitler h2 {
-  display: block;  
+  display: block;
 }
 
 .footerSocial {
@@ -84,6 +84,8 @@ footer {
   font-size: 1.8rem; 
 }
 
+
+
 .footerLink .footerLinkPage ul  {
   display: flex;
   flex-direction: column;
@@ -94,6 +96,7 @@ footer {
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: inherit;
+  
 }
 
 .footer section:last-child {

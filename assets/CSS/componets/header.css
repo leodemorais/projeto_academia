@@ -1,24 +1,165 @@
-.navegation {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+/*linkis primarios*/
 
-  margin-bottom: 5.5rem;
-  background-color: rgba(0, 0, 0, 0.0);
+.linkPrimarary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: #fff;
 }
 
-.overlay .menuLinks {
+.linkPrimarary a {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  padding: 2rem 0;
+  letter-spacing: .2rem;
+}
+.linkPrimarary a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* links secundario*/
+.linkSecundary {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linkSecundary-button-img {
+  width: 100%;
+}
+
+/*botão de pesquisa*/
+.search-box {
+  background-color: #512b1f;
+  height: 50px;
+  border-radius: 40px;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loupe-blue {
+  width: 25px;
+  height: 25px;
+}
+
+.loupe-white {
+  display: none;
+  width: 25px;
+  height: 25px;
+}
+
+.search-text {
+  background: none;
+  border: 0;
+  outline: 0;
+
+  padding: 0;
+
+  font-size: 16px;
+
+  transition: 0.4s;
+
+  width: 0;
+}
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-box:hover > .search-text {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.search-box:hover > .search-btn {
+  background: #000;
+}
+
+.search-box:hover > .search-btn .loupe-blue {
+  display: none;
+}
+
+.search-box:hover > .search-btn .loupe-white {
+  display: block;
+}
+
+::-webkit-input-placeholder {
+  font-size: 17px;
+  color: #aeaeae;
+}
+
+/* Botão de carinho e menu*/
+
+.linkSecundary-button {
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  min-width: 10rem;
+}
+
+.linkSecundary-button-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  min-width: 14rem;
+}
+
+.linkSecundary-button-menu h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+  font-style: italic;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: .3rem;
+}
+
+.linkSecundary-button-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkSecundary-button-login a {
+  text-decoration: nome;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+/*Links terceario*/
+
+.overlay > .menuLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
   gap: 4.8rem;
   margin: 0;
-  padding: 0;  
+  padding: 0; 
+  padding-bottom: 3rem;
 }
 
 .overlay .menuLinks a {
   text-decoration: none;
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.4rem;
   text-align: center;
