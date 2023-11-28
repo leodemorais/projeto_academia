@@ -1,18 +1,131 @@
 
-.geral {
-  max-width: 80rem;
-  margin: 0 auto;
-  background-color: #fff;
+.scheduling {
+  background-color: var(--color-text);
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.schedule-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 
-.card {
-  margin: 1rem;
+.schedule-paragraph {
+  font-size: 2rem;
+  max-width: 65ch;
+  line-height: 1.8;
+  display: inline-block;
+  vertical-align: top;
 }
 
-#cart {
-  margin-top: 2rem;
+/* Schedule */
+.schedule-item {
+  width: 100%;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 10rem;
+  margin: 1rem 0;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .schedule-item::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  background-image: linear-gradient(-180deg, #000, transparent);
+ }
+ .schedule-item__form {
+  padding: 2rem;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ }
+
+ .schedule-item__form label {
+  display: block;
+  margin-bottom: 1rem; 
+  font-weight: bold;
+  margin: 2rem;
+  border-radius: 50%;
 }
 
-#checkout {
-  margin-top: 1rem;
+ 
+ .schedule-item__form input, .schedule-item__form select {
+  width: 100%;
+  max-width: 40rem;
+  appearance: none;
+  padding: 0.75em;
+  transition: all .3s ease;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  border-radius: 5rem;
+ }
+
+ /* Estilizando o contêiner das aulas */
+.schedule {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: var(--color-primary);
+}
+
+/* Estilizando cada item de aula na lista */
+.schedule .schedule-scheduled {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+}
+.schedule .schedule-scheduled h2 {
+  font-size: 2rem;  
+  font-weight: 700; 
+}
+.schedule .schedule-scheduled span {
+  font-size: 1.8rem;
+  color: var(--color-p);
+  padding-top: 1rem;
+}
+ 
+@media (max-width: 768px) {
+  .scheduling {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;    
+  }
+  
+  .schedule-title {
+    font-size: 3rem;
+  }
+
+  .schedule-paragrafo {
+    font-size: 1.5rem;
+  }  
+}
+
+@media (max-width: 375px) {
+  .schedule-title {
+    font-size: 2rem;
+  }
+  
+  .schedule-paragrafo {
+    font-size: 1.2rem;
+  }
+
+  .schedule {
+    flex-direction: column;
+   }
 }
