@@ -10,10 +10,27 @@
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .faq p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 /* Media query for 375px screens */
 @media (max-width: 375px) {
   
   .imgFAQ {
     height: auto;
+  }
+
+  .faq h2 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .faq p {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }

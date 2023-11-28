@@ -188,4 +188,8 @@
   .imgContact {
     height: auto;
   }
+
+  .contact .contacInfo__container .contacInfo__container-conhecer {
+    font-size: 2.1rem;
+  }
 }

@@ -9,7 +9,7 @@
 }
 
 .blogPost {
-  padding-left: 2rem;
+  padding: 0 6rem;
 }
 
 .blogPost-pg {
@@ -59,6 +59,10 @@
     font-size: 2rem;
     top: 1rem;
   }
+
+  .blogPost {
+    padding: 0 2rem;
+  }
 }
 
 
@@ -71,5 +75,13 @@
   }
   .imgTraining {
     height: auto;
+  }
+
+  .blogPost-pg {
+    padding-right: 1rem ;
+  }
+
+  .blogPost {
+    padding: 0 1rem;
   }
 }
