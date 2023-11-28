@@ -46,10 +46,8 @@
           </div>   
         </div>
         <div class="linkSecundary-button-menu">
-          <a href="./carrinho.html" rel="noopener noreferrer"  >
-            <button type="button" title="Meu Carrinho">
-              <img src="../images/carrinho-de-compra.png" alt="carinho de compra do site" width="35px">
-            </button> 
+          <a href="./carrinho.html" rel="noopener noreferrer">
+            <img src="../images/carrinho-de-compra.png" alt="carinho de compra do site"/>
           </a>
         </div>     
       </div>  
@@ -65,18 +63,37 @@
       <i class="fa-solid fa-bars fa-2x"></i>
     </button>
   </header>
-    <main class="geral">
-      <h1>Área de Membros</h1>
-      <section class="member-features">
-        <h2>Recursos para Membros</h2>
-        <ul>
-          <li>Agendamento de aulas online</li>
-          <li>Acompanhamento do progresso</li>
-          <li>Dicas exclusivas de treinamento</li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
+  <main class="scheduling">
+    <div>
+      <img src="../images/foto-agendamento.jpg" alt="imagem de contato" class="imgTraining">
+     <h1 class="schedule-title" >Agendamento de Aulas Online</h1> 
+    </div>    
+    <p class="schedule-paragraph">Aqui você pode agendar as aulas online, para realizar o treinamento com os melhores profissionais
+    <div class="schedule-item"> 
+      <div class="schedule-item__form">    
+        <label for="class-name">Nome da Aula:</label>    
+        <select type="text" id="class-name">
+          <option value="aula-yoga">Aula de Yoga</option>
+          <option value="aula-zumba">Aula de Zumba</option>
+          <option value="aula-pilates">Aula de Pilates</option>
+          <option value="aula-musculacao">Aula de Musculação</option>
+          <option value="aula-grupo">Aula de Grupo</option>
+        </select> 
+        <label for="class-time">Horário:</label>
+        <input type="time" id="class-time">
+        <label for="date-start">Data Início:</label>
+        <input type="date" id="date-start">
+      </div>
+      <div class="schedule-item__form">
+        <button class="button" onclick="addNewClass()">Agendar</button> 
+      </div>    
+      <div class="schedule" id="schedule"> 
+          <!-- Horários das aulas serão exibidos aqui -->        
+       
+      </div>     
+    </div>  
+  </main>
+  <footer class="footer">
       <section>
         <img src="../images/4.png" alt="logotipo da academia" class="footerLogo" />
       </section>
@@ -196,8 +213,9 @@
             &copy; 2023 Orange Fitness
         </p>  
   </section>     
-    </footer>
-    <script src="../JS/header.js"></script>
-    <script src="../JS/script.js"></script>
+  </footer>
+  <script src="../JS/membros.js"></script>
+  <script src="../JS/header.js"></script>
+  <script src="../JS/script.js"></script>
   </body>
 </html>
