@@ -1,3 +1,7 @@
+.herder .herderTraining {
+    color: var(--color-text);
+}
+  
 .imgTerm {
   width: 100%;
   height: 50rem;
@@ -26,6 +30,12 @@
 }
 
 @media (max-width: 768px) {
+  .herder {
+    padding-top: 0;
+  }
+
+
+  
   .about .aboutValue {
     display: flex;
     flex-direction: row;
@@ -46,14 +56,15 @@
   }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 376px) {
+  .herder .herderTraining {
+    margin-top: 2rem;
+  }
+  
   .about .aboutValue {
     display: block;
-    flex-direction: row;
-<<<<<<< HEAD
-=======
+    flex-direction: row;    
     padding: 0;
->>>>>>> d981f18a43b7834f5a9d13b6a686b85e38fa2b84
   }
   .aboutValue li {
     display: flex;

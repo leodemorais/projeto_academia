@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 @import url('./reset.css');
 @import url('./global.css');
+@import url('./componets/slider.css');
 @import url('./componets/base.css');
 @import url('./componets/@mediaQuery.css');
 @import url('./componets/index.css');
