@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
 :root {
   font-size: 62.5%;
   --bg-img: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(231,81,11,1));
@@ -12,6 +9,6 @@
   --color-icon: #512b1f;
 }
 
-body, button, input, label, h1, h2, h3, p, span{
+body, button, input, label, h1, h2, h3, h6, p, span{
   font-family: 'Roboto', sans-serif;
 }
