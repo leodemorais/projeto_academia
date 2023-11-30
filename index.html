@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/3734orangelogo4.ico"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
   <link rel="stylesheet" href="./assets/CSS/style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/3734orangelogo4.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Orange Fitness - Home</title>
 </head>
 <body>
-   <header>
+  <nav>
     <div class= "overlay" id="myNav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
       <div class="linkPrimarary">
@@ -60,46 +64,70 @@
     <button class="nav-button" onclick="openNav()" title="botão de menu">
       <i class="fa-solid fa-bars fa-2x"></i>
     </button>
-  </header>
-  <main>
-    <div>
-      <h1>Bem-vindo à Orange Fitness</h1>
-    </div>      
-    <div>
-      <section class="about">
-        <h2>Sobre Nós</h2>
-        <p>
-        A Orange Fitness é o lugar perfeito para alcançar seus objetivos de
-        condicionamento físico. Oferecemos uma ampla gama de programas de
-        treinamento, instrutores experientes e instalações de última geração.
-        </p>
-        <img src="./assets/IMG/a-comprehensive-set-of-gym-weights-presented-in-highdefinition_982950-3643.jpg" alt="imagem sobre a academia" >
-      </section>
+  </nav>
+  <header>
+    <div class="slider">
+      <div class="slide">
+        <img src="./assets/images/carrosel 1.jpg" alt="sala de musculação da academia" class="slide__background-image">
+        <div class="slide__copy">
+          <h1>Sejam todos bem vindo a Orange Fitness</h1>
+          <h2 class="slide__copy-sub1">Nossas Instalações</h2>
+          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
+          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>          
+        </div>        
+      </div>          
+      <div class="slide">
+        <img src="./assets/images/carroseel 2.jpg" alt="sala das esteira eletricas da academia" class="slide__background-image">
+        <div class="slide__copy">
+          <h1>Sejam todos bem vindo a Orange Fitness</h1>
+          <h2 >Nossas Instalações</h2>
+          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
+          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>             
+        </div>        
+      </div>
+      <div class="slide">
+        <img src="./assets/images/carrosel 3.jpg" alt="Sala das biciclestas elçetricas da academia" class="slide__background-image">
+        <div class="slide__copy">
+          <h1 class="slide__copy-3">Sejam todos bem vindo a Orange Fitness</h1>
+          <h2>Nossas Instalações</h2>
+          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
+          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>              
+        </div>        
+      </div>
+      <div class="slide">
+        <img src="./assets/images/carrosel 5.jpg" alt="sala de exercicios livres da academia" class="slide__background-image">
+        <div class="slide__copy"> 
+          <h1 class="slide__copy-4">Sejam todos bem vindo a Orange Fitness</h1>         
+          <h2>Nossas Instalações</h2>
+          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
+          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>               
+        </div>        
+      </div>
+      <div class="slide">
+        <img src="./assets/images/carosel 4.jpg" alt="Areas interna da academia" class="slide__background-image">
+        <div class="slide__copy">
+          <h1 class="slide__copy-5">Sejam todos bem vindo a Orange Fitness</h1>
+          <h2 class="slide__copy-sub5">Nossas Instalações</h2>
+          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
+          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>                 
+        </div>        
+      </div>
     </div>
-    <div>
-      <section class="hours">
+  </header> 
+  <main>     
+    <section class="hours">
+      <img src="./assets/images/agendar horario.jpg" alt="imagem de agende seu horario" class="hours__image">
+      <div class="hours__copy">
         <h2>Horário de Funcionamento</h2>
-        <p>
-        Segunda a Sexta: 6h - 22h<br />
-        Sábado: 8h - 18h<br />
-        Domingo: Fechado
-        </p>
-        <img src="#" alt="imagem d aacademia">
-      </section>
-    </div>
-    <div>
-      <section class="location">
-        <h2>Localização</h2>
-        <p>
-        Endereço: Rua Benjamim Costanta, 960<br />
-        Santa Maria, RS, CEP: 97050-022     
-       </p> 
-       <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.3407626318808!2d-53.80064400311654!3d-29.686140331811547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cb4088000001%3A0xbb53997e0eb0ea64!2sBoa%20Forma%20Academias!5e0!3m2!1spt-BR!2sbr!4v1699519941934!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
-     ></iframe>
-     </section>
-    </div> 
+        <p>Segunda a Sexta: 6h - 22h</p>
+        <p >Sábado:8h - 18h</p>
+        <p>Domingo: Fechado</p>  
+      </div>      
+    </section>
+    <section class="maps">
+     <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Rua+Benjamin+Constant,+960+-+Centro,+Santa+Maria+-+RS,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+      </iframe>
+    </section>   
   </main>
   <footer class="footer">
     <section>
@@ -221,7 +249,10 @@
       </p>  
     </section>     
   </footer>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="./assets/JS/header.js"></script>
-  <script src="./assets/JS/membros.js"></script>
+  <script src="./assets/JS/slider.js"></script>
 </body>
 </html>
