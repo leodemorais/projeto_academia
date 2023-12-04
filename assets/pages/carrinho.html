@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
 
@@ -66,78 +63,164 @@
         <i class="fa-solid fa-bars fa-2x"></i>
       </button>
     </nav>
-    <main class="flat">
-
-      
-      <h1 class="herderTraining">Escolha o Seu Plano</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Plano Básico</h5>
-              <p class="card-text">Plano de acesso básico à academia.</p>
-              <p class="card-text">R$50/mês</p>
-              <button
-                class="btn btn-primary"
-                onclick="addToCart('Plano Básico', 50)"
-              >
-                Adicionar ao Carrinho
-              </button>
+    <main>
+      <div class="container__plans layout_container">
+        <div class="plans">
+        <h1 class="plans__title">Escolha o plano mais vantajoso para você</h1>
+        <div class="plan-card__list">          
+          <div class="plan-card-a plan-card-a__black plan-list-a__selected" >
+              <span class="plan-card-a__best">O mais vantajoso</span>
+              <ul class="plan-card-a__row">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">Plano Básico Black</h3>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Adesão</h5>
+                  <p class="plan-card-a__info">Zero</p>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Fideliade</h5>
+                  <p class="plan-card-a__info">12 meses</p>
+                </li>
+                <li class="plan-card-a__col">
+                 <p class="plan-card-a__info-preco">R$50/mês</p>
+                </li>
+              </ul>
+              <div class="plan-card-a__footer">
+              <p class="plan-card-a__description">Plano de acesso básico à academia.</p>
+              <button class="button btn" onclick="addToCart('Plano Básico', 50)">Adicionar ao Carrinho</button>
+            </div>              
+          </div> 
+          <div class="plan-card-a plan-list-a__selected" >
+              <ul class="plan-card-a__row">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">Plano Premium</h3>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Adesão</h5>
+                  <p class="plan-card-a__info">Zero</p>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Fideliade</h5>
+                  <p class="plan-card-a__info">12 meses</p>
+                </li>
+                <li class="plan-card-a__col">
+                 <p class="plan-card-a__info-preco">R$80/mês</p>
+                </li>
+              </ul>
+              <div class="plan-card-a__footer">
+              <p class="plan-card-a__description">Plano de acesso a duas modalidade de treinameto.</p>
+               <button class="button" onclick="addToCart('Plano Premium', 80)">Adicionar ao Carrinho</button>
+              </div>              
+          </div>           
+          <div class="plan-card-a plan-list-a__selected" >
+              <ul class="plan-card-a__row">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">Plano VIP</h3>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Adesão</h5>
+                  <p class="plan-card-a__info">Zero</p>
+                </li>
+                <li class="plan-card-a__col plan-card-a__col--desktop">
+                  <h5>Fideliade</h5>
+                  <p class="plan-card-a__info">Sem</p>
+                </li>
+                <li class="plan-card-a__col">
+                 <p class="plan-card-a__info-preco">R$120/mês</p>
+                </li>
+              </ul>
+              <div class="plan-card-a__footer">
+              <p class="plan-card-a__description">Plano VIP com acesso ilimitado a todas as instalações.</p>
+               <button class="button" onclick="addToCart('Plano VIP', 120)">Adicionar ao Carrinho</button>
+              </div>              
+          </div>
+        </div>  
+        <div class="addons-list">
+          <h2 class="headline">Quer complementar seu plano?</h2>
+          <div class="addons-card">
+            <div class="addons-card__top-card">
+              <div class="addons-card-geral">
+                <div class="addons-card__preco">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">FIT COACH</h3>                
+                </li>
+                <li class="plan-card-a__col">
+                  <p class="plan-card-a__info-preco">R$40/mês</p>
+                </li>
+              </div>             
+              <div class="addons-card__description">
+                <p class="plan-card-a__description">Escolha seu professor, defina seu objetivo e tenha mais resultados! Tire suas dúvidas e personalize seu treino através de chamadas de vídeo periódicas com um professor especializado. O pacote inclui: 12 consultas + chat(Permanência mínima de doze meses)                
+                </p>
+              </div>
+              </div>  
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Plano Premium</h5>
-              <p class="card-text">
-                Plano de acesso premium com treinamento personalizado.
-              </p>
-              <p class="card-text">R$80/mês</p>
-              <button
-                class="btn btn-primary"
-                onclick="addToCart('Plano Premium', 80)"
-              >
-                Adicionar ao Carrinho
-              </button>
+          <div class="addons-card">
+             <div class="addons-card__top-card">
+              <div class="addons-card-geral">
+                <div class="addons-card__preco">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">FIT NUTRI + FIT BODY</h3>                
+                </li>
+                <li class="plan-card-a__col">
+                  <p class="plan-card-a__info-preco">R$40/mês</p>
+                </li>
+              </div>             
+              <div class="addons-card__description">
+                <p class="plan-card-a__description">Potencialize os resultados do seu treino com um pacote anual de bioimpedâncias e consultas online com um nutricionista especializado no seu objetivo! Com Smart Fit Nutri + Smart Fit Body, você tem acesso a 4 consultas com nutri + plano alimentar personalizado + chat exclusivo com o nutricionista + 12 exames de bioimpedância em unidades Smart Fit.             
+                </p>
+              </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Plano VIP</h5>
-              <p class="card-text">
-                Plano VIP com acesso ilimitado a todas as instalações.
-              </p>
-              <p class="card-text">R$100/mês</p>
-              <button
-                class="btn btn-primary"
-                onclick="addToCart('Plano VIP', 100)"
-              >
-                Adicionar ao Carrinho
-              </button>
+          <div class="addons-card">
+            <div class="addons-card__top-card">
+              <div class="addons-card-geral">
+                <div class="addons-card__preco">
+                <li class="plan-card-a__col plan-card-a__col--inline">
+                  <span class="plan-card-a__checkbox"></span>
+                  <h3 class="plan-card-a__plan-name">FIT BODY</h3>                
+                </li>
+                <li class="plan-card-a__col">
+                  <p class="plan-card-a__info-preco">R$10/mês</p>
+                </li>
+              </div>             
+              <div class="addons-card__description">
+                <p class="plan-card-a__description">Acelere seus resultados acompanhando seus níveis de massa magra, gordura corporal e muito mais! Com esse pacote, você faz 12 bioimpedâncias em qualquer unidade que tenha o totem ou a balança do Smart Fit Body, e ainda tem gráficos detalhados de evolução do seu corpo ao longo do tempo. 
+                </p>
+              </div>
+              </div> 
             </div>
-          </div>
+          </div>    
+        </div> 
         </div>
-      </div>
-      
-             
-      <div class="col-md-6 offset-md-3">
-        <div class="card">
-            <div class="card-body">
-              <h2 class = "card-title">Carrinho de Compras</h2>
+        <div class="sidebar">
+          <button type="button" class="sidebar__btn-close">
+            <svg viewBox="0 0 256 256" width="100%" height="100%">
+              <path fill="none" d="M0 0h256v256H0z"></path>
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M200 56L56 200M200 200L56 56"></path>
+            </svg>
+          </button>
+          <div class="sidebar__sumary">
+            <h3 class="sidebar__sub"> Detalhe da compra</h3>
+            <button class="button">Continuar oara cadastro</button>
+          </div>
+         <div class="plan-card">
+            <div class="plan-card-b">
+              <h2 class = "plan-card-b__title">Carrinho de Compras</h2>
               <ul id="cart" class="list-group"></ul>
-            <p>Total: <span id="total">R$0</span></p>
-            <button 
-            class="btn btn-success" 
-            id="checkout"
-            >
-            Finalizar Compra
-            </button>
-          </div>
+              <p>Total: <span id="total">R$0</span></p>
+              <button class="button" id="checkout">Finalizar Compra<     </button>
+            </div>
+          </div>   
         </div>
-      </div>
+      </div>      
     </main>
     <footer class="footer">
       <section>

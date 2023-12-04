@@ -9,6 +9,6 @@
   --color-icon: #512b1f;
 }
 
-body, button, input, label, h1, h2, h3, h6, p, span{
+body, button, input, label, h1, h2, h3, h5, h6, p, span{
   font-family: 'Roboto', sans-serif;
 }
