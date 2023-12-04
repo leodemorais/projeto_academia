@@ -1,4 +1,4 @@
-.layont__container {
+.layout_container {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -115,9 +115,6 @@
   flex-direction: row;
 }
 
-.plan-card-a__col--desktop {
-  display: none;
-}
 
 .plan-card-a__checkbox {
   position: relative;
@@ -264,6 +261,10 @@
 
 /* Media query for 768px screens */
 @media (max-width: 768px) {
+  .plan-card-a__col--desktop {
+    display: none;
+  }
+
   .container__plans {
     display: block;    
     padding-bottom: 2rem;
