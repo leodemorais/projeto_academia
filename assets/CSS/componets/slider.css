@@ -22,23 +22,13 @@
   color: var(--color-text);
 }
 
-.slide .slide__copy-5 {
-  color: var(--color-p);
-}
-
-.slide .slide__copy-3, .slide .slide__copy-4 {
-  color: var(--color-text);
-}
-
 .slide__copy h2 {
   font-size: 3rem;
   color: var(--color-text);
   padding-top: 5rem;
 }
 
-.slide .slide__copy-sub1, .slide .slide__copy-sub5 {
-  color: var(--color-p);
-}
+
 .slide__copy h6 {
   font-size: 3rem;
   font-weight: 400;
