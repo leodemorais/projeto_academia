@@ -38,7 +38,6 @@
   top: 0;
   width: 50%;
   height: 100%;
-  padding: 2.5rem;
   background-color: #862c10;
   transition: 1.25s;
 }
@@ -136,7 +135,7 @@
 /**/
 .a-container {
   z-index: 100;
-  left: calc(100% - 600px );
+  left: calc(100% - 800px );
 }
 
 .b-container {
@@ -207,7 +206,7 @@
 }
 
 .is-txr {
-  left: calc(100% - 60rem );
+  left: calc(100% - 800px );
   transition: 1.1s;
   transform-origin: left;
 }
