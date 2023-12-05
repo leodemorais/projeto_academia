@@ -116,7 +116,7 @@
   text-align: center;
   line-height: 5.5rem;
   font-size: 2rem;
-  color: var(--color-bt);
+  color: rgba(231,81,11,1);
   cursor: pointer;
 }
 
