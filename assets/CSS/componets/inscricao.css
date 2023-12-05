@@ -1,3 +1,8 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .formLogin {
   display: -webkit-inline-flex;
@@ -72,5 +77,10 @@
 .btn:hover {
   transform: scale(1.05);
   background-color: #e7510b;
+}
 
+@media (max-width: 375px) {
+  .formLogin h1 {
+    font-size: 2.7rem;
+  }
 }
