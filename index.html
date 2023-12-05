@@ -10,6 +10,9 @@
 
   <link rel="stylesheet" href="./assets/CSS/style.css" />
 
+  <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+  <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+
   <title>Orange Fitness - Home</title>
 </head>
 <body>
@@ -29,10 +32,13 @@
           </a>     
         </div>       
         <div class="search-box">
-          <input type="text" class="search-text" placeholder="Pesquisar.....">
-              <img class="loupe-blue" src="./assets/images/loupe-blue.svg" alt="lupa de pesquisa azul" width="25px"   height="25px">
-              <img class="loupe-white" src="./assets/images/loupe-white.svg" alt="lupa de pesquisa branca" width="25px"   height="25px">
-          </a>      
+          <a href="http://" target="_blank" rel="noopener noreferrer" hidden></a> 
+          <input type="search" class="search-text" placeholder="Pesquisar....." >
+          <div class="list">
+          </div>
+          <div class="icon">
+           <ion-icon name="search-outline"></ion-icon>
+          </div>  
         </div>
       <div class="linkSecundary-button">
         <div class="linkSecundary-button-img">
@@ -254,6 +260,8 @@
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="./assets/JS/header.js"></script>
+  <script src="./assets/JS/home.js"></script>
   <script src="./assets/JS/slider.js"></script>
+  <script src="./assets/JS/busca.js"></script>
 </body>
 </html>
