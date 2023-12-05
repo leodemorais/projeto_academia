@@ -18,7 +18,7 @@ h1 {
 }
 
 .gallery-image {
-  width: 50rem;
+  width: 40rem;
   height: 34rem;
   object-fit: cover;
   object-position: center;

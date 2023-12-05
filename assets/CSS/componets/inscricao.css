@@ -1,6 +1,6 @@
 
 .formLogin {
-  display: flex;
+  display: -webkit-inline-flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 7px;

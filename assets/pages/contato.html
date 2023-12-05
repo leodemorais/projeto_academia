@@ -8,7 +8,6 @@
     type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contato</title>
-   
   </head>
   <body>
     <nav>
@@ -73,39 +72,43 @@
           <div class="contacInfo__container">
             <h2>Informações de Contato</h2>
             <span>
-              <i class="fa-solid fa-phone-flip fa-lg" style="color: #512b1f;"></i>
+              <i class="fa-solid fa-phone-flip fa-lg" style="color: #e7510b;"></i>
               (123) 456-7890
             </span>
             <span>
-              <i class="fa-brands fa-whatsapp fa-lg" style="color: #512b1f;"></i>         
+              <i class="fa-brands fa-whatsapp fa-lg" style="color: #e7510b;"></i>         
             +55(12) 99999-9999
             </span>
             <span>
-              <i class="fa-solid fa-envelope fa-lg" style="color: #512b1f;"></i>
+              <i class="fa-solid fa-envelope fa-lg" style="color: #e7510b;"></i>
               contato@orangefitness.com
             </span>      
-            <h2 class="contacInfo__container-conhecer">Venha conhecer a nossa Academia</h2> 
+            <h2 class="contacInfo__container-conhecer">Venha conhecer a nossa academia!</h2> 
             <span>
-              <i class="fa-solid fa-location-dot fa-lg" style="color: #512b1f;"></i>
+              <i class="fa-solid fa-location-dot fa-lg" style="color: #e7510b;"></i>
               Endereço: Rua Benjamim Costanta, 960 
               Santa Maria, RS, CEP: 97050-022     
             </span>        
           </div>
         </section>
+        
         <section class="contactForm">
-          <form class="contactForm__container">        
+          <form class="contactForm__container">
+            <br>        
             <h2>Formulário de Contato</h2>
-            <label for="nome">Nome <span >(mínimo 8 caracteres)</span>:</label>               
-            <input type="text" id="nome" name="nome" required minlength="8"/>  
-            <label for="email">E-mail <span>(digite um email válido)</span>:</label>
-            <input type="email" id="email" name="email" required/>  
+            <label for="nome">Nome:</label>               
+            <input type="text" id="nome" name="nome" required minlength="8" placeholder="Digite seu nome (mínimo 8 caracteres)" required>  
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email" required>  
             <label for="mensagem">Mensagem:</label>   
-            <input type="text" id="mensagem">  
+            <input type="text" id="mensagem" placeholder="Digite aqui sua mensagem" required>  
             <button type="submit" class="button">Enviar Mensagem</button>     
           </form>      
         </section>
-     </section>       
-    </main>
+     </section> 
+    
+     </main>
+    <br><br><br><br>
     <footer class="footer">
       <section>
         <img src="../images/4.png" alt="logotipo da academia" class="footerLogo" />
@@ -227,5 +230,6 @@
   </section>     
     </footer>
     <script src="../JS/header.js"></script>
+    <script src="../JS/contato.js"></script>
   </body>
 </html>
