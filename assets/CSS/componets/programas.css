@@ -1,0 +1,139 @@
+
+.cards {
+  width: 132rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  gap: 5rem;
+  padding-bottom: 2rem;
+}
+.flip-container {
+  width: 50rem;
+  height: 40rem;
+  perspective: 1000px;
+}
+
+.flipper {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+
+.card-face__front-front .card-face__front-sub{
+  position: absolute;
+  z-index: 1;
+  left: 20rem;
+  top: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0;
+}
+.card-face__front .img__card{
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  width: 50rem;
+  height: 40rem;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.card-face__back {
+  background-color: #ff9100;
+  transform: rotateY(180deg);
+}
+
+.card-face__back .card-face__black-sub {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card-face__back.card-face__black-paragrapho {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.flipper{
+  position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);	
+}
+
+
+.card-face__front, .card-face__back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Media query for 375px screens */
+@media (max-width: 768px) {
+.herderTraining {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .flip-container {
+    width: 50rem;
+    height: 40rem;
+  }
+}
+
+/* Media query for 375px screens */
+@media (max-width: 375px) {
+  .herderTraining {
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .flip-container {
+    width: 35rem;
+    height: 20rem;
+  }
+
+  .card-face__front-front .card-face__front-sub {
+    left: 10rem;
+  }
+  
+  .card-face__front .img__card{
+    width: 35rem;
+    height: 20rem;
+  }
+
+  .card-face__back {
+    padding: 0;
+  }
+  .card-face__back .card-face__black-sub {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0.1rem;
+  }
+
+   .card-face__back .card-face__black-paragrapho {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 0;
+    margin: 0;
+    line-height: 2rem;
+  }
+}
