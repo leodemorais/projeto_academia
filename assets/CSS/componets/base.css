@@ -21,7 +21,7 @@ main {
   color: var(--color-text);
 }
 
-h1 {
+.herderTraining {
   font-size: 3em;
   font-weight: 700;
   line-height: 1.6rem;
