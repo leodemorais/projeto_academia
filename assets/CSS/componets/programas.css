@@ -3,25 +3,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
-} 
+    min-height: 100hv;
+}
 .card{
-    position: relative;
-    width:  250px;
-    height: 380px;
-}   
+    position:relative;
+    width: 300px;
+    padding: 350px;
+}
 .card .face{
     position: absolute;
     width: 100%;
-    padding: 100%;
+    padding:100%;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
     transition: .5s;
 }
 .card .front{
-    transform: perspective(600px)  rotateY(0deg);
-    box-shadow: 0 5px 10px ;
+    transform: perspective(600px) rotateY(0edg);
+    box-shadow: 0 5px 10px #000;
 }
 .card .front img{
     position: absolute;
@@ -32,27 +32,29 @@
 .card .front h2{
     position: absolute;
     bottom: 0;
-    width: 100px;
+    width: 100%;
     height: 45px;
     line-height: 45px;
     color: aliceblue;
     text-align: center;
 }
 .card .back{
-    transform: perspective(600px)  rotateY(180deg);
+    transform: perspective(600px) rotateY(180edg);
+    background:aliceblue;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
 }
 .card .back p{
     letter-spacing: 1px;
 
 }
-.card:hover .front{
-    transform: perspective(600px)  rotateY(180deg);
+.car:hover .front{
+    transform: perspective(600px) rotateY(180edg);
 }
-
-.card:hover .back{
-    transform: perspective(600px)  rotateY(360deg);
+.car:hover .back{
+    transform: perspective(600px) rotateY(360edg);
 }

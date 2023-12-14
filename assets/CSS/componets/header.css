@@ -37,25 +37,15 @@
 /*botão de pesquisa*/
 .search-box {
   background-color: #512b1f;
-  height: 50px;
-  border-radius: 40px;
-  padding: 10px;
+  height: 5rem;
+  border-radius: 4rem;
+  padding: 1rem;
   
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.loupe-blue {
-  width: 25px;
-  height: 25px;
-}
-
-.loupe-white {
-  display: none;
-  width: 25px;
-  height: 25px;
-}
 
 .search-text {
   background: none;
@@ -64,21 +54,69 @@
 
   padding: 0;
 
-  font-size: 16px;
+  font-size: 1.6rem;
+  color: var(--color-text);
 
   transition: 0.4s;
 
   width: 0;
 }
 
+.search-box.active input {
+  border-radius: .5rem .5rem 0 0;
+}
+
 .search-btn {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.search-box .list {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-width: 20rem;
+  overflow-y: auto;
+}
+
+.search-box.active .list {
+  padding: 1rem .8rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.list li {
+  list-style: none;
+  padding: .8rem 1.2rem;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: .3rem;
+}
+
+.search-box.active .list li {
+  display: block;
+}
+
+.list:hover {
+  background: #efefef;
+}
+
+.search-box .icon {
+  right: 0;
+  top: 0;
+  height: 5.5rem;
+  width: 5.5rem;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+  color: rgba(231,81,11,1);
   cursor: pointer;
 }
 
@@ -91,13 +129,6 @@
   background: #000;
 }
 
-.search-box:hover > .search-btn .loupe-blue {
-  display: none;
-}
-
-.search-box:hover > .search-btn .loupe-white {
-  display: block;
-}
 
 ::-webkit-input-placeholder {
   font-size: 17px;
