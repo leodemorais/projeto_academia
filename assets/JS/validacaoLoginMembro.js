@@ -152,3 +152,31 @@ btnsubmit.addEventListener('click', (e) => {
     alert('Formulário enviado com sucesso!')
   }
 })
+
+let senha = document.querySelector('.lnr-eye');
+senha.addEventListener('click', function() {
+
+    let input = document.querySelector('#senha');
+
+    if(input.getAttribute('type') == 'password') {
+        input.setAttribute('type', 'text');
+    } else {
+        input.setAttribute('type', 'password');
+    }
+
+});
+
+
+let confirmaSenha = document.querySelector('.lnr-eye');
+
+confirmaSenha.addEventListener('click', function() {
+
+    let input = document.querySelector('#confirma-senha');
+
+    if(input.getAttribute('type') == 'password') {
+        input.setAttribute('type', 'text');
+    } else {
+        input.setAttribute('type', 'password');
+    }
+
+});
