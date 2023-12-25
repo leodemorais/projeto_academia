@@ -1,6 +1,6 @@
 /*Media query Navegatin*/
 /* Media query for 1024px screens */
-@media (min-width: 1024px) {
+@media (max-width: 1366px) {
   herder h1 {
     right: 50%;
   }
