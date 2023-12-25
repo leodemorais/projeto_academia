@@ -55,10 +55,16 @@
 .form__icon {
   object-fit: contain;
   width: 3rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: 0 5px;
   opacity: 0.5;
   transition: 0.15s;
+}
+
+.form__icon .form__icon-list{
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .form__icon:hover {
   opacity: 1;
@@ -97,6 +103,7 @@
   font-size: 34px;
   font-weight: 700;
   line-height: 3;
+  padding: 0;
   color: #181818;
 }
 
@@ -136,6 +143,51 @@ label:not(:first-of-type){
   margin-left: 1.5rem;
   margin-top: 1rem;
 }
+
+.userName {
+  background-image: url("../../images/name.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 2rem;
+  padding-left: 3rem;
+}
+
+.userEmail {
+  background-image: url("../../images/o-email.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 2rem;
+  padding-left: 3rem;
+}
+
+.userPassword {
+  background-image: url("../../images/password.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 2.5rem;
+  padding-left: 3rem;
+}
+
+.eye-icon1, .eye-icon2, .eye-icon3 {
+  position: absolute;
+  top: 63%;
+  right: 22%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.eye-icon2 { 
+  top: 69%; 
+}
+
+.eye-icon3 { 
+  top: 56%; 
+}
+
 
 .helper-text {
   display: none;
