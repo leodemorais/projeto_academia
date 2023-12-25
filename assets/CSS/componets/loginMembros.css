@@ -3,14 +3,14 @@
   position: relative;
   align-items: center;
   width: 96%;
-  height: 60rem;
+  height: 70rem;
   margin: 2rem;
   background-color: var(--color-primary);
   box-shadow: 10px 10px 10px var(--color-sub), -10px -10px 10px var(--color-sub);
   border-radius: 2rem;
   overflow: hidden;
 }
-/*@media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .main {
     transform: scale(0.7);
   }
@@ -29,7 +29,7 @@
   .main {
     transform: scale(0.4);
   }
-}*/
+}
 
 .container {
   display: flex;
@@ -124,6 +124,60 @@
 .button:hover {
   box-shadow: 8px 8px 16px var(--color-bt), -8px -8px 16px var(--color-bt);
   color: var(--color-p);
+}
+
+label {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+
+label:not(:first-of-type){
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.helper-text {
+  display: none;
+  padding-top: 0;
+  font-size: 1.5rem;
+  color: var(--color-p);
+}
+
+.orientacao {
+  margin-top: 1.5rem;
+  font-size: .7rem;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: -.5rem;
+  left: 8rem;
+  color: #DFDFDF;
+  font-size: 1rem;
+  padding: .2rem .3rem;
+  width: 10rem;
+  display: block;
+  background-color: var(--color-p);
+  border-radius: 2rem;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px var(--color-primary);
+  color: var(--color-p);
+}
+
+.visible {
+  display: block;
 }
 
 /**/
@@ -230,6 +284,7 @@
   }
 }
 
+/* Media query for 768px screens */
 @media (max-width: 768px) {
   .main {
     width: 100%;
@@ -266,7 +321,7 @@
   }
   
   .b-container {
-    left: 50%
+    left: 50%;
     z-index: 0;
   }
 }
