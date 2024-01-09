@@ -4,7 +4,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="https://imgur.com/a/m8tToxO">
+    <img src="https://github.com/leodemorais/projeto_academia/blob/master/assets/images/Imagem%20do%20projeto.png">
 </h1>
 
 ## Sobre
