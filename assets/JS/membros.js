@@ -13,6 +13,9 @@ function addNewClass() {
     const currentDate = new Date();
     const formattedDate = currentDate.toLocaleDateString(); // Formata a data como string
 
+    const [hours, minutes] = classTime.split(':');
+    const classDateTime = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), hours, minutes);
+
     scheduledDiv.innerHTML = `
       <h2>${className}</h2>
       <p><strong>Horário:</strong> ${classTime} - ${formattedDate}</p>
@@ -42,3 +45,13 @@ function closeSchedule() {
   const schedule = document.getElementById('schedule');
   schedule.innerHTML = ''; // Remove todo o conteúdo dentro da div 'schedule'
 }
+
+window.onload = function() {
+  const today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); // Mês começa do zero
+  const yyyy = today.getFullYear();
+
+  const minDate = yyyy + '-' + mm + '-' + dd;
+  document.getElementById('date-start').min = minDate;
+};
