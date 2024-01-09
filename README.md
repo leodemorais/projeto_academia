@@ -4,7 +4,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="[https://imgur.com/a/I7AqZHY](https://imgur.com/a/m8tToxO)">
+    <img src="https://imgur.com/a/m8tToxO">
 </h1>
 
 ## Sobre
