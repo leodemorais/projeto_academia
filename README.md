@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <p>Academia Orange</p>
+    <p>Academia ORANGE FITTNES</p>
 </h1>
 
 <h1 align="center">
