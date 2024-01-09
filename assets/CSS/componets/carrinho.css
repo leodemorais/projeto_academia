@@ -103,6 +103,10 @@
 }
 
 .plan-card-a__col {
+  
+}
+
+.plan-card-a__col {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,6 +262,8 @@
   font-size: 3rem;
   line-height: 1.8;
 }
+
+
 
 /* Media query for 768px screens */
 @media (max-width: 768px) {

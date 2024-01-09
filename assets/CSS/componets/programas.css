@@ -40,18 +40,22 @@
 }
 
 .card-face__back {
-  background-color: #ff9100;
+  background-color: black;
   transform: rotateY(180deg);
+  text-align: center;
+  color: #fff;
 }
 
 .card-face__back .card-face__black-sub {
   font-size: 3rem;
   text-align: center;
+  color: #fff;
 }
 
 .card-face__back.card-face__black-paragrapho {
   text-align: center;
   font-size: 2rem;
+  color: #fff;
 }
 
 .flipper{

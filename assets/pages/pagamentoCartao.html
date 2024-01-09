@@ -1,144 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/3734orangelogo4.ico"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-
-  <link rel="stylesheet" href="./assets/CSS/style.css" />
-
-  <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
-  <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
-
-  <title>Orange Fitness - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
+  <title>Pagamento com Cartão</title>
 </head>
 <body>
   <nav>
     <div class= "overlay" id="myNav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
       <div class="linkPrimarary">
-        <a href="tel:0800 6060 415" class="linkPrimarary-tel">TELEVENDAS 0800 6060 415</a>
-        <a href="./assets/pages/blog.html"  rel="noopener noreferrer">Blog</a>
-        <a href="./assets/pages/depoimentos.html"  rel="noopener noreferrer">Depoimentos</a>
-        <a href="./assets/pages/contato.html"  rel="noopener noreferrer">Contato</a>
+      <a href="tel:0800 6060 415" class="linkPrimarary-tel">TELEVENDAS 0800 6060 415</a>
+      <a href="./blog.html"  rel="noopener noreferrer">Blog</a>
+      <a href="./depoimentos.html"  rel="noopener noreferrer">Depoimentos</a>
+      <a href="./contato.html"  rel="noopener noreferrer">Contato</a>
       </div>      
       <div class="linkSecundary">    
         <div class="logo">
-          <a href="./index.html" rel="noopener noreferrer">
-            <img src="./assets/images/orangelogozero.png" alt="logo tipo da orange academia">
+          <a href="../../index.html" rel="noopener noreferrer">
+            <img src="../images/orangelogozero.png" alt="logo tipo da orange academia">
           </a>     
-        </div>       
-        <div class="search-box">
-          <a href="http://" target="_blank" rel="noopener noreferrer" hidden></a> 
-          <input type="search" class="search-text" placeholder="Pesquisar....." >
-          <div class="list">
-          </div>
-          <div class="icon">
-           <ion-icon name="search-outline"></ion-icon>
-          </div>  
-        </div>
+        </div>     
+        
       <div class="linkSecundary-button">
         <div class="linkSecundary-button-img">
-          <img src="./assets/images/entrar-avatar.png" alt="login-user-name">
+          <img src="../images/entrar-avatar.png" alt="login-user-name">
         </div>                
         <div class="linkSecundary-button-menu">
           <h3>Bem-vindo</h3>
           <div class="linkSecundary-button-login">
-            <a href="./assets/pages/loginMembros.html" title="Entre">Entre</a> 
+            <a href="./loginMembros.html" title="Entre">Entre</a> 
                           ou 
-            <a href="./assets/pages/loginMembros.html" title="Cadastre-se">Cadastre-se</a>
+            <a href="/loginMembros.html" title="Cadastre-se">Cadastre-se</a>
           </div>   
         </div>
         <div class="linkSecundary-button-menu">
-          <a href="./assets/pages/carrinho.html" rel="noopener noreferrer"  >
-            <img src="./assets/images/carrinho-de-compra.png" alt="carinho de compra do site">
+          <a href="./carrinho.html" rel="noopener noreferrer"  >
+            <img src="../images/carrinho-de-compra.png" alt="carinho de compra do site">
           </a>
         </div>     
       </div>  
       </div>      
       <div class="menuLinks overlay-content">               
-        <a href="./assets/pages/carrinho.html">Carrinho</a></li>
-        <a href="./assets/pages/membros.html">Membros</a></li>
-        <a href="./assets/pages/galeria.html">Galeria</a></li>
-        <a href="./assets/pages/programas.html">Programas de Treinamento</a>
+        <a href="./carrinho.html">Carrinho</a></li>
+        <a href="./membros.html">Membros</a></li>
+        <a href="./galeria.html">Galeria</a></li>
+        <a href="./programas.html">Programas de Treinamento</a>
       </div>
     </div>
     <button class="nav-button" onclick="openNav()" title="botão de menu">
       <i class="fa-solid fa-bars fa-2x"></i>
     </button>
   </nav>
-  <header>
-    <div class="slider">
-      <div class="slide">
-        <img src="./assets/images/carrosel 1.jpg" alt="sala de musculação da academia" class="slide__background-image">
-        <div class="slide__copy">
-          <h1>Sejam todos bem-vindos à Orange Fitness</h1>
-          <h2 class="slide__copy-sub1">Nossas Instalações</h2>
-          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
-          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>          
-        </div>        
-      </div>          
-      <div class="slide">
-        <img src="./assets/images/carroseel 2.jpg" alt="sala das esteira eletricas da academia" class="slide__background-image">
-        <div class="slide__copy">
-          <h1>Sejam todos bem-vindos à Orange Fitness</h1>
-          <h2 >Nossas Instalações</h2>
-          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
-          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>             
-        </div>        
-      </div>
-      <div class="slide">
-        <img src="./assets/images/carrosel 3.jpg" alt="Sala das biciclestas elçetricas da academia" class="slide__background-image">
-        <div class="slide__copy">
-          <h1 class="slide__copy-3">Sejam todos bem-vindos à Orange Fitness</h1>
-          <h2>Nossas Instalações</h2>
-          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
-          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>              
-        </div>        
-      </div>
-      <div class="slide">
-        <img src="./assets/images/carrosel 5.jpg" alt="sala de exercicios livres da academia" class="slide__background-image">
-        <div class="slide__copy"> 
-          <h1 class="slide__copy-4">Sejam todos bem-vindos à Orange Fitness</h1>         
-          <h2>Nossas Instalações</h2>
-          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
-          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>               
-        </div>        
-      </div>
-      <div class="slide">
-        <img src="./assets/images/carosel 4.jpg" alt="Areas interna da academia" class="slide__background-image">
-        <div class="slide__copy">
-          <h1 class="slide__copy-5">Sejam todos bem-vindos à Orange Fitness</h1>
-          <h2 class="slide__copy-sub5">Nossas Instalações</h2>
-          <h6>A <strong>Orange Fitness</strong> é o lugar perfeito para alcançar seus objetivos de condicionamento físico.</h6> 
-          <h6>Oferecemos uma ampla gama de programas de treinamento, instrutores experientes e instalações de última geração.</h6>                 
-        </div>        
-      </div>
+  <main>
+    <div class="containerCard">
+      <div class="card-container">  
+          <div class="front">
+              <div class="image">
+                  <img src="../images/chip.png" alt="">
+                  <img src="../images/visa.png" alt="">
+              </div>
+              <div class="card-number-box">################</div>
+              <div class="flexbox">
+                  <div class="box">
+                      <span>card holder</span>
+                      <div class="card-holder-name">full name</div>
+                  </div>
+                  <div class="box">
+                      <span>expires</span>
+                      <div class="expiration">
+                          <span class="exp-month">mm</span>
+                          <span class="exp-year">yy</span>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+          <div class="back">
+              <div class="stripe"></div>
+              <div class="box">
+                  <span>cvv</span>
+                  <div class="cvv-box"></div>
+                  <img src="image/visa.png" alt="">
+              </div>
+          </div>  
+      </div>  
+      <form action="">
+          <div class="inputBox">
+              <span>card number</span>
+              <input type="text" maxlength="16" class="card-number-input">
+          </div>
+          <div class="inputBox">
+              <span>card holder</span>
+              <input type="text" class="card-holder-input">
+          </div>
+          <div class="flexbox">
+              <div class="inputBox">
+                  <span>expiration mm</span>
+                  <select name="" id="" class="month-input">
+                      <option value="month" selected disabled>month</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                  </select>
+              </div>
+              <div class="inputBox">
+                  <span>expiration yy</span>
+                  <select name="" id="" class="year-input">
+                      <option value="year" selected disabled>year</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                  </select>
+              </div>
+              <div class="inputBox">
+                  <span>cvv</span>
+                  <input type="text" maxlength="4" class="cvv-input">
+              </div>
+          </div>
+          <input type="submit" value="submit" class="submit-btn">
+      </form>  
     </div>
-  </header> 
-  <main>     
-    <section class="hours">
-      <a href="./assets/pages/membros.html">
-        <img src="./assets/images/agendar horario.jpg" alt="imagem de agende seu horario" class="hours__image">
-      </a>
-      <div class="hours__copy">
-        <h2>Horário de Funcionamento</h2>
-        <p>Segunda a Sexta: 6h - 22h</p>
-        <p >Sábado: 8h - 18h</p>
-        <p>Domingo: Fechado</p>  
-      </div>      
-    </section>
-    <section class="maps">
-     <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Rua+Benjamin+Constant,+960+-+Centro,+Santa+Maria+-+RS,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" title="mapa de localização da academia">
-      </iframe>
-    </section>   
-  </main>
-  <footer class="footer">
+   </main>     
+   <footer class="footer">
     <section>
-      <img src="./assets/images/4.png" alt="logotipo da academia" class="footerLogo" />
+      <img src="../images/4.png" alt="logotipo da academia" class="footerLogo" />
     </section>
     <section>
       <h2 class="footerTitler">Siga a Orange Fitness</h2>
@@ -198,7 +203,6 @@
             href="https://www.twitter.com/orangefitness"
             target="_blank"
             rel="noopener noreferrer"
-            title="logo do twitter"
           >
           <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="white"/></svg>
           </a>
@@ -207,9 +211,7 @@
           <a
             href="https://www.linkedin.com/company/orangefitness"
             target="_blank"
-            rel="noopener noreferrer"
-            title="logo do linkedin"
-            >  
+            rel="noopener noreferrer">  
             <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" fill="white"/></svg>
           </a>
         </li>
@@ -220,10 +222,10 @@
         <div class="footerLinkPage">
           <h2 class="footerTitler">Institucional</h2>
           <ul >
-            <li><a href="./assets/pages/sobre.html">Sobre a Academia</a></li>
-            <li><a href="./assets/pages/termos.html">Termos de Uso</a></li>
+            <li><a href="./sobre.html">Sobre a Academia</a></li>
+            <li><a href="./termos.html">Termos de Uso</a></li>
             <li>
-              <a href="./assets/pages/politicas.html"
+              <a href="./politicas.html"
                 >Política de Privacidade</a>
             </li>  
           </ul>
@@ -231,40 +233,34 @@
         <div  class="footerLinkPage">
           <h2 class="footerTitler">Planos</h2>
           <ul>
-            <li><a href="./assets/pages/loginMembros.html">Matrícula</a></li>
-            <li><a href="./assets/pages/contato.html">Contatos</a></li>
+            <li><a href="./carrinho.html">Matrícula</a></li>
+            <li><a href="./contato.html">Contatos</a></li>
           </ul>
         </div>
         <div  class="footerLinkPage">
           <h2 class="footerTitler">Corporativo</h2>
           <ul>
-            <li><a href="./assets/pages/blog.html">Dicas de Treino</a></li>
-            <li><a href="./assets/pages/depoimentos.html">Depoimentos</a></li>
+            <li><a href="./blog.html">Dicas de Treino</a></li>
+            <li><a href="./depoimentos.html">Depoimentos</a></li>
             <li>
-              <a href="./assets/pages/faq.html">Perguntas Frequentes</a>
+              <a href="./faq.html">Perguntas Frequentes</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
     <section class="footerDisclaimer">
-      <p class="footerDisclaimer-pg">
-          *Consulte as condições promocionais e regulamentos na página:  <a href="./assets/pages/contato.html" > Contatos</a>*
-      </p>              
-      <p class="footerDisclaimer-pg">
-          <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
-      </p>   
-      <p class="footerDisclaimer-pg">
-          &copy; 2023 Orange Fitness
-      </p>  
+          <p class="footerDisclaimer-pg">
+              *Consulte as condições promocionais e regulamentos na página: <a href="./contato.html"> Contato</a>*
+          </p>              
+          <p class="footerDisclaimer-pg">
+              <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
+          </p>   
+          <p class="footerDisclaimer-pg">
+              &copy; 2023 Orange Fitness
+          </p>  
     </section>     
   </footer>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="./assets/JS/header.js"></script>
-  <script src="./assets/JS/home.js"></script>
-  <script src="./assets/JS/slider.js"></script>
-  <script src="./assets/JS/busca.js"></script>
-</body>
+  <script src="../JS/pagamentoCartao.js"></script>
+  </body>
 </html>
