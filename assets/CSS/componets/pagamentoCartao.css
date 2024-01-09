@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.containerCard{
+    min-height: 100vh;
+    background: rgba(231,81,11,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 6rem;
+}
+
+.containerCard form{
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.1);
+    padding: 2rem;
+    width: 60rem;
+    padding-top: 16rem;
+}
+
+.containerCard form .inputBox{
+    margin-top: 2rem;
+}
+
+.containerCard form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: .5rem;
+}
+
+.containerCard form .inputBox input,
+.containerCard form .inputBox select{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.containerCard form .flexbox{
+    display: flex;
+    gap:1.5rem;
+}
+
+.containerCard form .flexbox .inputBox{
+    flex:1 1 15rem;
+}
+
+.containerCard form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color:#fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.containerCard form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.containerCard .card-container{
+    margin-bottom: -15rem;
+    position: relative;
+    height: 25rem;
+    width: 40rem;
+}
+
+.containerCard .card-container .front{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: .5rem;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 2.5rem rgba(0,0,0,.2);
+    padding:2rem;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.containerCard .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.containerCard .card-container .front .image img{
+    height: 5rem;
+}
+.containerCard .card-container .front .card-number-box{
+    padding:3rem 0;
+    font-size: 2.2rem;
+    color:#fff;
+}
+
+.containerCard .card-container .front .flexbox{
+    display: flex;
+}
+
+.containerCard .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.containerCard .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.containerCard .card-container .back{
+  position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.containerCard .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.containerCard .card-container .back .box{
+    padding: 0 20px;
+}
+
+.containerCard .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.containerCard .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.containerCard .card-containerCard .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
