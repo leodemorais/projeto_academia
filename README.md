@@ -10,13 +10,13 @@
 ## Sobre
 
 
-Descricao: Este projeto foi apresentado para treinamento para fazer um site do zero a estar plenamento funcionado na nuvem e desenvolvido com os conhecimentos adquirodos durante as aula  da #Proz.
+Descrição: Este projeto é resultado do treinamento em Desenvolvimento Front-End promovido pela #Proz. O desafio apresentado foi o de planejar, construir e implementar um web-site do zero a partir dos conhecimentos adquiridos durante as aulas da qualificação.
 
 --- 
 
-## 📂Ferramentas Utilizadas
+## 📂Tecnologias Utilizadas
 
-Foram utilizadas as seguintes ferramentas:
+Foram utilizadas as seguintes tecnologias:
 
 - HTML5
 - CSS3 
