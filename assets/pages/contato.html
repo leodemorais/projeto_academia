@@ -59,7 +59,7 @@
     <main>
      <div class="herder">     
       <img src="../images/contato.jpg" alt="imagem de contato" class="imgContact">
-       <h1>Contato</h1>
+      
      </div>  
      <section class="contact">
         <section class="contactInfo">
@@ -88,19 +88,25 @@
         
         <section class="contactForm">
           <form class="contactForm__container">
-            <br>        
+            <br>
             <h2>Formulário de Contato</h2>
-            <label for="nome">Nome:</label>               
-            <input type="text" id="nome" name="nome" required minlength="8" placeholder="Digite seu nome (mínimo 8 caracteres)" required>  
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required placeholder="Digite seu email" required>  
-            <label for="mensagem">Mensagem:</label>   
-            <input type="text" id="mensagem" placeholder="Digite aqui sua mensagem" required>  
-            <button type="submit" class="button">Enviar Mensagem</button>     
-          </form>      
+        
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required minlength="8" placeholder="Digite seu nome (mínimo 8 caracteres)" required max-width: 100%;>
+        
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" required max-width: 100%;>
+        
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto da mensagem" required max-width: 100%;>
+        
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="120" placeholder="Digite aqui a sua mensagem" required max-width: 100%;></textarea>
+        
+            <button type="submit" class="button">Enviar</button>
+          </form>
         </section>
-     </section> 
-    
+                  
      </main>
     <br><br><br><br>
     <footer class="footer">
@@ -219,7 +225,7 @@
             <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
         </p>   
         <p class="footerDisclaimer-pg">
-            &copy; 2023 Orange Fitness
+            &copy; 2024 Orange Fitness
         </p>  
   </section>     
     </footer>

@@ -60,7 +60,7 @@ function updateCart() {
     cartElement.appendChild(listItem);
   });
 
-  totalElement.textContent = `Total: R$${total}`;
+  totalElement.textContent = `R$${total}`;
 }
 
 // Selecionar todos os elementos com a classe 'addon-checkbox' e adicionar o evento de clique
