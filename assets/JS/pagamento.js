@@ -61,13 +61,30 @@ document.querySelectorAll('input[name="paymentMethod"]').forEach(function(radio)
 });
 
 function chargeStyle(element) {
-  const isActive = element.classList.contains('active');
-  
   document.querySelectorAll('.pagamento__icon-pix, .pagamento__icon-cartao, .pagamento__icon-boleto').forEach(el => {
     el.classList.remove('active');
   });
 
-  if (!isActive) {
-    element.classList.add('active');
-  }
+  element.classList.add('active');
 }
+
+function exibirFormularioSelecionado() {
+  document.querySelectorAll('.paymentDetails').forEach(details => {
+    details.style.display = 'none';
+  });
+
+  var selectedPayment = document.querySelector('input[name="paymentMethod"]:checked').value + 'Form';
+  document.getElementById(selectedPayment).style.display = 'flex';
+}
+
+// Adiciona um ouvinte de evento para cada botão de rádio
+document.querySelectorAll('input[name="paymentMethod"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+    exibirFormularioSelecionado();
+  });
+});
+
+// Exibe o formulário correspondente ao método de pagamento selecionado ao carregar a página
+window.addEventListener('load', function () {
+  exibirFormularioSelecionado();
+});
