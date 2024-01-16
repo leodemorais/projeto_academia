@@ -8,6 +8,7 @@
   --color-text: #fff;
   --color-icon: #512b1f;
   --color-geral:  rgba(231,81,11,1);
+  --color-secundary: #e7510b;
 }
 
 body, button, input, label, h1, h2, h3, h5, h6, p, span{
