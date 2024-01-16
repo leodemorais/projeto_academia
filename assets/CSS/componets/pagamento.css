@@ -51,8 +51,13 @@
 
   .pagamento__icon-pix.active, .pagamento__icon-cartao.active, .pagamento__icon-boleto.active {
     background-color: var(--color-geral);
-    color: white;    
+    color: var(--color-text);    
   }
+
+ .iconPix[type="radio"]:checked, .iconCartao[type="radio"]:checked, .iconBoleto[type="radio"]:checked {
+  background-color: var(--color-geral);
+  color: var(--color-text);
+}
 
   .iconPix[type="radio"], .iconCartao[type="radio"], .iconBoleto[type="radio"]{
     appearance: none;
