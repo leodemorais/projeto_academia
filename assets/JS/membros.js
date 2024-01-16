@@ -21,20 +21,19 @@ function addNewClass() {
       <p><strong>Horário:</strong> ${classTime} - ${formattedDate}</p>
       <button class="button" onclick="cancelClass(this)">Cancelar</button>`;
     
-    // Div para quando não houver aula agendada
-    const noClassDiv = document.createElement('div');
-    noClassDiv.innerHTML = `
-      <h2>Não há aula agendada.</h2>
-      <br> <br>
-      <button class="button" onclick="closeSchedule()">Fechar</button>`;
-    
-    // Adicionando ambas as divs à div "schedule"
+    // Remova a div "Não há aula agendada." se ela existir
+    const noClassDiv = document.getElementById('no-class-message');
+    if (noClassDiv) {
+      schedule.removeChild(noClassDiv);
+    }
+
+    // Adicionando a div com a aula agendada à div "schedule"
     schedule.appendChild(scheduledDiv);
-    schedule.appendChild(noClassDiv);
   } else {
     alert('Por favor, preencha todos os campos.');
   }
 }
+
 
 function cancelClass(element) {
   const classItem = element.parentNode; // Para remover a div pai do botão
