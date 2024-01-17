@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="shortcut icon" href="../images/3734orangelogo4.ico" type="image/x-icon">
-  <title>Pagamento com Cartão</title>
+
+  <title>Pagamento</title>
+
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
   <nav>
@@ -57,91 +58,173 @@
     </button>
   </nav>
   <main>
-    <div class="containerCard">
-      <div class="card-container">  
-          <div class="front">
-              <div class="image">
-                  <img src="../images/chip.png" alt="">
-                  <img src="../images/visa.png" alt="">
-              </div>
-              <div class="card-number-box">################</div>
-              <div class="flexbox">
-                  <div class="box">
-                      <span>card holder</span>
-                      <div class="card-holder-name">full name</div>
+    <div class="pagamento">
+      <div class="pagamento__titel">
+        <h1 class="pagamento__title-title"> Escolha a forma de pagamento</h1>
+      </div>
+      <div class="pagamento__icon">
+        <form id="paymentForm" class="pagamento__form">
+          <div class="pagamento__icon-pix" onclick="chargeStyle(this)">
+            <input type="radio" name="paymentMethod" value="pix" class="iconPix" >
+            <p class="pagamento__icon-paragrafo">Pix</p>
+          </div>
+          <div class="pagamento__icon-cartao" onclick="chargeStyle(this)">
+            <input type="radio" name="paymentMethod" value="cartao"  class="iconCartao" >
+            <p class="pagamento__icon-paragrafo">Cartão de Crédito</p>
+          </div>
+          <div class="pagamento__icon-boleto" onclick="chargeStyle(this)">
+            <input type="radio" name="paymentMethod" value="boleto"  class="iconBoleto" >
+            <p class="pagamento__icon-paragrafo">Boleto</p>
+          </div>
+        </form>      
+      </div>
+      <div class="form__pagamento">
+        <div id="pixForm" class="paymentDetails">
+          <h2 class="form_subTitie">Pix</h2>          
+          <label for="cabranca" class="form__pagamento-label-cobranca">
+            <input type="checkbox" name="Endereço de cobrança igual ao do cadastro" id="cobranca">
+            <span class="form__pagamento-span">Endereço de cobrança igual ao de cadastro.</span>
+          </label> 
+          <label for="cantrato" class="form__pagamento-label-contrato">
+            <input type="checkbox" name="Eu aceito o contrato" id="contrato">
+            <span class="form__pagamento-span">Eu aceito o contrato.</span> 
+          </label> 
+          <div class="form__pagamento-chavePix">
+            <div class="form__pagamento-chavePix-chavePix">
+              <small>Valor em R$</small>
+              <div class="form__pagamento-chavePix-imput">
+                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+              </div>  
+              <small>CPF/CNPJ</small> 
+              <div class="form__pagamento-chavePix-imput">
+                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="999.999.999-99">                 
+              </div>    
+            </div>
+            <div class="form__pagamento-button">
+              <button class="button" type="submit">GERAR CHAVE PIX</button>    
+            </div>               
+          </div> 
+        </div>
+        <div id="cartaoForm" class="paymentDetails">
+          <div class="containerCard">
+            <div class="card-container">  
+                <div class="front">
+                    <div class="image">
+                        <img src="../images/chip.png" alt="">
+                        <img src="../images/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">################</div>
+                    <div class="flexbox">
+                        <div class="box">
+                            <span>Número do Cartão</span>
+                            <div class="card-holder-name">Nome do cartão</div>
+                        </div>
+                        <div class="box">
+                            <span>Expira em</span>
+                            <div class="expiration">
+                                <span class="exp-month">mm</span>
+                                <span class="exp-year">aa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="back">
+                    <div class="stripe"></div>
+                    <div class="box">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                        <img src="image/visa.png" alt="">
+                    </div>
+                </div>  
+            </div>  
+            <form action="">
+                <div class="inputBox">
+                    <span>Número do cartão</span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                    <span>Nome do cartão</span>
+                    <input type="text" class="card-holder-input">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>Expira mês</span>
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled>mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>Expira Ano</span>
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled>ano</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV</span>
+                        <input type="text" maxlength="4" class="cvv-input">
+                    </div>
+                </div>
+                <div class="form__cartaoCredit">
+                  <small>Valor em R$</small>
+                  <div class="form__cartaoCredit-imput">
+                    <input type="text" id="cartao" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
                   </div>
-                  <div class="box">
-                      <span>expires</span>
-                      <div class="expiration">
-                          <span class="exp-month">mm</span>
-                          <span class="exp-year">yy</span>
-                      </div>
-                  </div>
+                </div>
+                <input type="submit" value="Pagamento" class="submit-btn">
+            </form>  
+          </div>
+        </div>    
+        <div id="boletoForm" class="paymentDetails">
+          <h2 class="form_subTitie">Boleto</h2>
+          <label for="cabranca" class="form__pagamento-label-cobranca">
+            <input type="checkbox" name="Endereço de cobrança igual ao do cadastro" id="cobranca">
+            <span class="form__pagamento-span">Endereço de cobrança igual ao de cadastro.</span>
+          </label> 
+          <label for="cantrato" class="form__pagamento-label-contrato">
+            <input type="checkbox" name="Eu aceito o contrato" id="contrato">
+            <span class="form__pagamento-span">Eu aceito o contrato.</span> 
+          </label> 
+          <div class="form__pagamento-boleto">
+            <div class="form__pagamento-boleto-boleto">
+              <small>Valor em R$</small>
+              <div class="form__pagamento-boleto-imput">
+                <input type="text" id="boleto" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+              </div>  
+              <small>CPF/CNPJ</small> 
+              <div class="form__pagamento-boleto-imput">
+                <input type="text" id="boleto" name="chavePix" required="required" placeholder="999.999.999-99"> 
               </div>
+            </div>           
+          <div class="form__pagamento-button">
+            <button class="button" type="submit">GERAR BOLETO</button>    
           </div>  
-          <div class="back">
-              <div class="stripe"></div>
-              <div class="box">
-                  <span>cvv</span>
-                  <div class="cvv-box"></div>
-                  <img src="image/visa.png" alt="">
-              </div>
-          </div>  
-      </div>  
-      <form action="">
-          <div class="inputBox">
-              <span>card number</span>
-              <input type="text" maxlength="16" class="card-number-input">
-          </div>
-          <div class="inputBox">
-              <span>card holder</span>
-              <input type="text" class="card-holder-input">
-          </div>
-          <div class="flexbox">
-              <div class="inputBox">
-                  <span>expiration mm</span>
-                  <select name="" id="" class="month-input">
-                      <option value="month" selected disabled>month</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                  </select>
-              </div>
-              <div class="inputBox">
-                  <span>expiration yy</span>
-                  <select name="" id="" class="year-input">
-                      <option value="year" selected disabled>year</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                      <option value="2023">2023</option>
-                      <option value="2024">2024</option>
-                      <option value="2025">2025</option>
-                      <option value="2026">2026</option>
-                      <option value="2027">2027</option>
-                      <option value="2028">2028</option>
-                      <option value="2029">2029</option>
-                      <option value="2030">2030</option>
-                  </select>
-              </div>
-              <div class="inputBox">
-                  <span>cvv</span>
-                  <input type="text" maxlength="4" class="cvv-input">
-              </div>
-          </div>
-          <input type="submit" value="submit" class="submit-btn">
-      </form>  
-    </div>
-   </main>     
-   <footer class="footer">
+        </div> 
+      <div>
+    </div>    
+  </main>
+  <footer class="footer">
     <section>
       <img src="../images/4.png" alt="logotipo da academia" class="footerLogo" />
     </section>
@@ -257,10 +340,12 @@
               <a href="mailto:contato@orangefitness.com">contato@orangefitness.com</a>
           </p>   
           <p class="footerDisclaimer-pg">
-              &copy; 2023 Orange Fitness
+              &copy; 2024 Orange Fitness
           </p>  
     </section>     
   </footer>
   <script src="../JS/pagamentoCartao.js"></script>
-  </body>
+  <script src="../JS/header.js"></script>
+  <script src="../JS/pagamento.js"></script>
+</body>
 </html>

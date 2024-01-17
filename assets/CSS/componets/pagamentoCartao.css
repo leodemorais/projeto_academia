@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
 *{
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     outline: none; border: none;
-    text-decoration: none;
-    text-transform: uppercase;
+    
 }
 
 .containerCard{
+    width: 100%;
     min-height: 100vh;
-    background: rgba(231,81,11,1);
     display: flex;
     align-items: center;
     justify-content: center;

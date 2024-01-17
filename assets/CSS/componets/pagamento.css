@@ -1,0 +1,206 @@
+.pagamento {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pagamento .pagamento__title-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-sub);
+  line-height: 130%;  
+}
+
+.pagamento__icon {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.pagamento__form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 100%;
+}
+
+.pagamento__icon-pix, .pagamento__icon-cartao, .pagamento__icon-boleto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: var(--color-geral);
+  border: 2px solid var(--color-geral);
+  border-radius: 1rem;  
+  color: var(--color-geral);
+  padding: 2rem;  
+  cursor: pointer;
+}  
+
+.pagamento__icon-paragrafo {
+  text-align: center; 
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 0;
+}
+
+  .pagamento__icon-pix.active, .pagamento__icon-cartao.active, .pagamento__icon-boleto.active {
+    background-color: var(--color-geral);
+    color: var(--color-text);    
+  }
+
+ .iconPix[type="radio"]:checked, .iconCartao[type="radio"]:checked, .iconBoleto[type="radio"]:checked {
+  background-color: var(--color-geral);
+  color: var(--color-text);
+}
+
+  .iconPix[type="radio"], .iconCartao[type="radio"], .iconBoleto[type="radio"]{
+    appearance: none;
+    background: url(../../images/pix_icon_198027.png) no-repeat;
+    height: 5.6rem;
+    width: 5.6rem;
+    padding-bottom: -1rem;
+    cursor: pointer;
+  }
+
+  .iconPix[type="radio"] {
+    background: url(../../images/pix_icon_198027.png) no-repeat;
+  } 
+  
+  .iconCartao[type="radio"] {
+    background: url(../../images/cartao-do-banco.png) no-repeat;
+  } 
+  .iconBoleto[type="radio"] {
+    background: url(../../images/boleto.png) no-repeat;
+  }
+
+.pix, .cartao, .boleto {
+  width: 3rem;
+}
+
+.form__pagamento { 
+  display: flex;
+  width: 80%;
+  margin-left: 3rem;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.paymentDetails {
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0 3rem;
+justify-content: start;
+align-items: flex-start;
+}
+
+.form_subTitie {
+  display: flex;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-bottom: none;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.form__pagamento-label-cobranca, .form__pagamento-label-contrato {
+  display: flex;
+  gap: 2rem;
+}
+
+.form__pagamento .form__pagamento-label-contrato {
+  margin-left: 0;
+}
+
+.form__pagamento-span {
+  font-size: 2rem;
+  color: var(--color-icon);
+  text-align: left
+}
+
+.form__pagamento-chavePix, .form__pagamento-boleto, .form__pagamento-cartao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+  .form__pagamento-cartao {
+    display: flex; 
+    flex-direction: column;
+  }
+
+.form__pagamento-chavePix-chavePix, .form__pagamento-boleto-boleto, .form__pagamento-cartao-cartao {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  flex: 1 1 0;
+}
+
+.form__pagamento-chavePix-chavePix small, .form__pagamento-boleto-boleto small, .form__pagamento-cartao-cartao small, .form__cartaoCredit small {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--color-icon);
+  padding-top: 1rem;
+  flex: 1 1 1;
+}
+
+.form__pagamento-chavePix-imput, .form__pagamento-boleto-imput, .form__pagamento-cartao-imput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  flex: 1 1 1;
+}
+#chavePix, #boleto, #codigoSeguranca, #numeroCartao, #nomeTitular, #validadeCartao, #cartao {
+  font-size: 1.5rem;
+  cursor: text;
+  text-align: center;
+}
+
+.form__pagamento-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.form_pagamento-cartao-numero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.form__cartaoCredit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.form__cartaoCredit-imput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 1.2rem;
+}
+
+.form__cartaoCredit small {
+  padding-bottom: 1rem;
+}
+

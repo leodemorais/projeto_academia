@@ -1,36 +1,46 @@
 function addNewClass() {
   const className = document.getElementById('class-name').value;
   const classTime = document.getElementById('class-time').value;
+  const dateStart = document.getElementById('date-start').value;
 
-  if (className && classTime) {
+  if (className && classTime && dateStart) {
     const schedule = document.getElementById('schedule');
     
-    // Div para a aula agendada
-    const scheduledDiv = document.createElement('div');
-    scheduledDiv.classList.add('schedule-scheduled');
+    // Criar uma string única para representar data e hora do agendamento
+    const uniqueDateTime = `${dateStart} ${classTime}`;
 
-    // Obtendo a data atual para exibir junto com o horário da aula
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString(); // Formata a data como string
+    // Verificar se já existe um agendamento para a mesma data e hora
+    if (!isDuplicateAppointment(uniqueDateTime)) {
+      // Div para aula agendada
+      const scheduledDiv = document.createElement('div');
+      scheduledDiv.classList.add('schedule-scheduled');
 
-    scheduledDiv.innerHTML = `
-      <h2>${className}</h2>
-      <p><strong>Horário:</strong> ${classTime} - ${formattedDate}</p>
-      <button class="button" onclick="cancelClass(this)">Cancelar</button>`;
-    
-    // Div para quando não houver aula agendada
-    const noClassDiv = document.createElement('div');
-    noClassDiv.innerHTML = `
-      <h2>Não há aula agendada.</h2>
-      <br> <br>
-      <button class="button" onclick="closeSchedule()">Fechar</button>`;
-    
-    // Adicionando ambas as divs à div "schedule"
-    schedule.appendChild(scheduledDiv);
-    schedule.appendChild(noClassDiv);
+      scheduledDiv.innerHTML = `
+        <h2>${className}</h2>
+        <p><strong>Data e Horário:</strong> ${uniqueDateTime}</p>
+        <button class="button" onclick="cancelClass(this)">Cancelar</button>`;
+
+      // Adicionar a div com aula agendada à div "schedule"
+      schedule.appendChild(scheduledDiv);
+    } else {
+      alert('Já existe um agendamento para esse horário.');
+    }
   } else {
     alert('Por favor, preencha todos os campos.');
   }
+}
+
+function isDuplicateAppointment(uniqueDateTime) {
+  const scheduledDivs = document.querySelectorAll('.schedule-scheduled');
+
+  for (const div of scheduledDivs) {
+    const scheduledDateTime = div.querySelector('p').innerText.split(': ')[1];
+
+    if (scheduledDateTime === uniqueDateTime) {
+      return true;
+    }
+  } 
+  return false;
 }
 
 function cancelClass(element) {
@@ -42,3 +52,13 @@ function closeSchedule() {
   const schedule = document.getElementById('schedule');
   schedule.innerHTML = ''; // Remove todo o conteúdo dentro da div 'schedule'
 }
+
+window.onload = function() {
+  const today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); // Mês começa do zero
+  const yyyy = today.getFullYear();
+
+  const minDate = dd + '-' + mm + '-' + yyyy;
+  document.getElementById('date-start').min = minDate;
+};

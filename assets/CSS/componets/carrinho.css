@@ -57,6 +57,7 @@
   font-weight: 400;
   border: 1px solid #efefef;
   border-radius: 2rem;
+  height: 20rem;
 }
 
 
@@ -100,10 +101,6 @@
   align-items: center;
   width: 100%;
   margin-top: 1rem;
-}
-
-.plan-card-a__col {
-  
 }
 
 .plan-card-a__col {
@@ -153,7 +150,7 @@
 
 .plan-card-a__plan-name {
   margin-left: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -204,6 +201,7 @@
   line-height: 2.4rem;
   border-bottom: none;
   text-align: justify;
+  height: 2rem;
 }
 
 .addons-card {
