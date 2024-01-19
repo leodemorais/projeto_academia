@@ -93,11 +93,11 @@
             <div class="form__pagamento-chavePix-chavePix">
               <small>Valor em R$</small>
               <div class="form__pagamento-chavePix-imput">
-                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                <input type="text" id="valorPix" name="valorPix" required="required" value=""> 
               </div>  
               <small>CPF/CNPJ</small> 
               <div class="form__pagamento-chavePix-imput">
-                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="999.999.999-99">                 
+                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="999.999.999-99" >                 
               </div>    
             </div>
             <div class="form__pagamento-button">
@@ -140,11 +140,11 @@
             <form action="">
                 <div class="inputBox">
                     <span>Número do cartão</span>
-                    <input type="text" maxlength="16" class="card-number-input">
+                    <input type="text" maxlength="16" class="card-number-input" id="numeroCartaoCartao" >
                 </div>
                 <div class="inputBox">
                     <span>Nome do cartão</span>
-                    <input type="text" class="card-holder-input">
+                    <input type="text" class="card-holder-input" id="nomeTitularCartao">
                 </div>
                 <div class="flexbox">
                     <div class="inputBox">
@@ -183,13 +183,13 @@
                     </div>
                     <div class="inputBox">
                         <span>cvv</span>
-                        <input type="text" maxlength="4" class="cvv-input">
+                        <input type="text" maxlength="4" class="cvv-input" id="codigoSegurancaCartao">
                     </div>
                 </div>
                 <div class="form__cartaoCredit">
                   <small>Valor em R$</small>
                   <div class="form__cartaoCredit-imput">
-                    <input type="text" id="cartao" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                    <input type="text" id="valorCartao" name="valorCacrtão" value="" required="required"> 
                   </div>
                 </div>
                 <input type="submit" value="Pagamento" class="submit-btn">
@@ -210,11 +210,11 @@
             <div class="form__pagamento-boleto-boleto">
               <small>Valor em R$</small>
               <div class="form__pagamento-boleto-imput">
-                <input type="text" id="boleto" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                <input type="text" id="valorBoleto" name="valorBoleto" required="required" value=""> 
               </div>  
               <small>CPF/CNPJ</small> 
               <div class="form__pagamento-boleto-imput">
-                <input type="text" id="boleto" name="chavePix" required="required" placeholder="999.999.999-99"> 
+                <input type="text" id="boleto" name="boleto" required="required" placeholder="999.999.999-99"> 
               </div>
             </div>           
           <div class="form__pagamento-button">
@@ -347,5 +347,6 @@
   <script src="../JS/pagamentoCartao.js"></script>
   <script src="../JS/header.js"></script>
   <script src="../JS/pagamento.js"></script>
+  <script src="../JS/carrinho.js"></script>
 </body>
 </html>
