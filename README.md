@@ -18,14 +18,29 @@ Descrição: Este projeto é resultado do treinamento em Desenvolvimento Front-E
 
 Foram utilizadas as seguintes tecnologias:
 
-- HTML5
-- CSS3 
+- HTML5;
+- CSS3;
 - JavaScript
+- Figma;
+- Lucidchart;
+- Git/ GitHub;
+- ISQ Lite;
+- Banco de dados – SQL;
 ---
 
-## Desenvolvedores 
+## Desenvolvedores do Projeto
 
 - Fábio Andre Zatta = (https://www.linkedin.com/in/fabiozatta-dweb) / (https://github.com/fisiofaz)
-- Leonardo David de Morais = <a src = "https://www.linkedin.com/in/leodemorais/"></a> / <a src = "https://github.com/leodemorais"></a>
-- Adilton Alves = <a src = "https://github.com/adilton28"></a>
-- Elaine Moreira = <a src = "https://www.linkedin.com/in/elaine-moreira-64910b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></a>
+- Leonardo David de Morais = (https://www.linkedin.com/in/leodemorais) / (https://github.com/leodemorais)
+- Adilton Alves = (https://github.com/adilton28)
+- Elaine Moreira = (https://www.linkedin.com/in/elaine-moreira-64910b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+---
+
+## Segundo Versão do Site vai ter:
+
+- Responsividade;
+- Pagina exclusivas para membros logados;
+- Novas modalidades de aulas – em modo online;
+- APIS de banco de dados;
+- APIS de Pagamento;
+
