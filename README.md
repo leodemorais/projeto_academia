@@ -23,4 +23,7 @@ Foram utilizadas as seguintes tecnologias:
 - JavaScript
 ---
 
+## Desenvolvedores 
 
+Fábio Andre Zatta <a src = "https://www.linkedin.com/in/fabiozatta-dweb/"> / <a src = "https://github.com/fisiofaz">
+Leonardo David de Morais <a src = "https://www.linkedin.com/in/leodemorais/"> / <a src = "https://github.com/leodemorais">
