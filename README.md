@@ -25,5 +25,7 @@ Foram utilizadas as seguintes tecnologias:
 
 ## Desenvolvedores 
 
-Fábio Andre Zatta <a src = "https://www.linkedin.com/in/fabiozatta-dweb/"> / <a src = "https://github.com/fisiofaz">
-Leonardo David de Morais <a src = "https://www.linkedin.com/in/leodemorais/"> / <a src = "https://github.com/leodemorais">
+- Fábio Andre Zatta = <a src="https://www.linkedin.com/in/fabiozatta-dweb/"></a> / <a src = "https://github.com/fisiofaz"></a>
+- Leonardo David de Morais = <a src = "https://www.linkedin.com/in/leodemorais/"></a> / <a src = "https://github.com/leodemorais"></a>
+- Adilton Alves = <a src = "https://github.com/adilton28"></a>
+- Elaine Moreira = <a src = "https://www.linkedin.com/in/elaine-moreira-64910b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></a>
