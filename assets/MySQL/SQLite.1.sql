@@ -1,4 +1,3 @@
--- Tabela de cadastro (Registro de Usuário)
 CREATE TABLE cadastro (
   id SERIAL PRIMARY KEY,
   username VARCHAR(16) NOT NULL UNIQUE,
@@ -16,51 +15,45 @@ CREATE TABLE compra (
   CONSTRAINT fk_cadastro_compra FOREIGN KEY (fk_id_cadastro) REFERENCES cadastro(id) 
 );
 
+CREATE TABLE aula (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(24) NOT NULL,
+  time INT NOT NULL
+);
 
-CREATE TABLE itens_compra (
+CREATE TABLE agendamento_aula (
+  id SERIAL PRIMARY KEY,
+  date DATE NOT NULL,
+  fk_id_cadastro INT NOT NULL,
+  fk_id_compra INT NOT NULL,
+  fk_id_aula INT NOT NULL,
+  CONSTRAINT fk_cadastro_agendamento FOREIGN KEY (fk_id_cadastro) REFERENCES cadastro(id),
+  CONSTRAINT fk_compra_agendamento FOREIGN KEY (fk_id_compra) REFERENCES compra(id),
+  CONSTRAINT fk_aula_agendamento FOREIGN KEY (fk_id_aula) REFERENCES aula(id)
+);
+
+CREATE TABLE items_compra (
   id SERIAL PRIMARY KEY,
   card_items VARCHAR(100) NOT NULL,
+  price DECIMAL(8,2) NOT NULL,
   fk_id_compra INT NOT NULL,
   CONSTRAINT fk_compra_itens FOREIGN KEY (fk_id_compra) REFERENCES compra(id)
 );
 
-CREATE TABLE adicionais_compra (
+CREATE TABLE addons (
   id SERIAL PRIMARY KEY,
   addons_items VARCHAR(100) NOT NULL,
-  fk_id_compra INT NOT NULL,
-  CONSTRAINT fk_compra_adicionais FOREIGN KEY (fk_id_compra) REFERENCES compra(id)
+  price DECIMAL(8,2) NOT NULL
 );
 
--- Tabela de agendamento_aula (Agendamento de Aula)
-CREATE TABLE agendamento_aula (
+CREATE TABLE adicionais_compra (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(24) NOT NULL,
-  time INT NOT NULL,
-  date DATE NOT NULL,
-  fk_id_cadastro INT NOT NULL,
   fk_id_compra INT NOT NULL,
-  CONSTRAINT fk_cadastro_agendamento FOREIGN KEY (fk_id_cadastro) REFERENCES cadastro(id),
-  CONSTRAINT fk_compra_agendamento FOREIGN KEY (fk_id_compra) REFERENCES compra(id)
-);
-
--- Tabela de planos (Planos)
-CREATE TABLE planos (
-  id SERIAL PRIMARY KEY,
-  card_items VARCHAR(100) NOT NULL, 
-  price INT NOT NULL,
-  fk_id_compra INT NOT NULL,
-  CONSTRAINT fk_compra_plano FOREIGN KEY (fk_id_compra) REFERENCES compra(id)
-);
-
--- Tabela de adicionais (Itens Adicionais)
-CREATE TABLE adicionais (
-  id SERIAL PRIMARY KEY,
-  addons_items VARCHAR(100) NOT NULL, 
-  price INT NOT NULL,
-  fk_id_compra INT NOT NULL,
-  fk_id_planos INT NOT NULL,
-  CONSTRAINT fk_compra_adicional FOREIGN KEY (fk_id_compra) REFERENCES compra(id),
-  CONSTRAINT fk_planos_adicional FOREIGN KEY (fk_id_planos) REFERENCES planos(id)
+  fk_id_items_compra INT NOT NULL,
+  fk_id_addons INT NOT NULL,
+  CONSTRAINT fk_compra_adicionais FOREIGN KEY (fk_id_compra) REFERENCES compra(id),
+  CONSTRAINT fk_items_compra_adicionais FOREIGN KEY (fk_id_items_compra) REFERENCES items_compra(id),
+  CONSTRAINT fk_addons_adicionais FOREIGN KEY (fk_id_addons) REFERENCES addons(id)
 );
 
 -- Tabela de modalidade (Tipos de Aula)
@@ -69,6 +62,6 @@ CREATE TABLE modalidade (
   name VARCHAR(24) NOT NULL,
   time INT NOT NULL,
   date DATE NOT NULL,
-  fk_id_cadastro INT NOT NULL,
-  CONSTRAINT fk_cadastro_modalidade FOREIGN KEY (fk_id_cadastro) REFERENCES cadastro(id)
-);
+  fk_id_agendamento_aula INT NOT NULL,
+  CONSTRAINT fk_agendamento_aula_modalidade FOREIGN KEY (fk_id_agendamento_aula) REFERENCES agendamento_aula(id)
+); 
