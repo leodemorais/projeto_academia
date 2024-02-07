@@ -32,7 +32,7 @@ Foram utilizadas as seguintes tecnologias:
 
 - Fábio Andre Zatta = (https://www.linkedin.com/in/fabiozatta-dweb) / (https://github.com/fisiofaz)
 - Leonardo David de Morais = (https://www.linkedin.com/in/leodemorais) / (https://github.com/leodemorais)
-- Adilton Alves = (https://github.com/adilton28)
+- Adilton Alves = (https://github.com/adilton28) / (https://www.linkedin.com/in/adilton-alves-741812100/)
 - Elaine Moreira = (https://www.linkedin.com/in/elaine-moreira-64910b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 ---
 
